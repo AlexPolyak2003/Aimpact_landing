@@ -1,0 +1,12 @@
+.box {
+  h1 {
+    position: absolute;
+    top: 0;
+    left: 5em;
+    z-index: 1;
+  }
+
+  .video {
+    z-index: 0;
+  }
+}
