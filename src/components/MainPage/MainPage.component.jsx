@@ -9,25 +9,32 @@ import Industry from "../Pages/Industry/Industry.component";
 import Project from "../Pages/Projects/Project.component";
 import ActualProject from "../Pages/ActualProjects/ActualProject.component";
 import Footer from "../Footer/Footer.component";
+import Videoplayer from "../Videoplayer/Videoplayer.component";
 
 const MyLazyComponent = lazy(
   () =>
     new Promise((resolve) => {
       setTimeout(() => {
-        resolve(import("../LazyLoading/MyLazycomponent"));
+        resolve(import("../Videoplayer/Videoplayer.component"));
       }, 3000);
     })
 );
 
-// const MyLazyComponent = lazy(() => import("../LazyLoading/MyLazycomponent"));
+// const MyLazyComponent = lazy(() =>
+//   import("../Videoplayer/Videoplayer.component")
+// );
 
 const MainPage = () => {
   return (
     <div className={styles.wrapper}>
       <Suspense>
         <div className={styles.content}>
+          <MyLazyComponent>
+            <Videoplayer />
+          </MyLazyComponent>
+
           <Head />
-          <MyLazyComponent />
+          {/* <MyLazyComponent /> */}
           <AboutUs />
           <Direction_page />
           <Industry />

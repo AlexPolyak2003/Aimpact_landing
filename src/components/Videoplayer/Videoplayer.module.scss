@@ -1,0 +1,39 @@
+.wrapper {
+  width: 100%;
+  height: 100%;
+  .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .text {
+      p {
+        position: absolute;
+        z-index: 1;
+        animation-name: fade;
+        animation-duration: 0.5s;
+      }
+    }
+
+    video {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      z-index: 0;
+      animation-name: fade;
+      animation-duration: 0s;
+    }
+  }
+
+  @keyframes fade {
+    0% {
+      //   margin-left: 3em;
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+}

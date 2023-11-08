@@ -1,5 +1,5 @@
 import React, { FC, ReactNode } from "react";
-// import VideoPlayer from "../VideoPlayer/VideoPlayer.component";
+import VideoPlayer from "../Videoplayer/Videoplayer.component";
 import styles from "./MyLazycomponent.module.scss";
 import Head from "../Header/Header.component";
 
@@ -8,7 +8,7 @@ const MyLazyComponent = () => {
     <div className={styles.box}>
       {/* <h1>Hello World!</h1> */}
 
-      {/* <VideoPlayer className={styles.video} /> */}
+      <VideoPlayer className={styles.video} />
     </div>
   );
 };
