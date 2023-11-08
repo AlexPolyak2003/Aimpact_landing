@@ -1,39 +1,97 @@
-.wrapper {
-  width: 100%;
-  height: 100%;
-  .content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+@font-face {
+  font-family: "EuclidSquare";
+  src: url("../../fonts/EuclidSquare-Regular.ttf");
+}
 
-    .text {
-      p {
+body {
+  font-family: "EuclidSquare";
+
+  .wrapper {
+    width: 100%;
+    height: 100%;
+    .content {
+      display: flex;
+      justify-content: center;
+      position: relative;
+      // align-items: center;
+
+      .header {
+        width: 95%;
+        // border: 1px solid red;
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        animation-name: fade;
+        animation-duration: 1s;
+        height: 5em;
+        gap: 16.9em;
+        .logo {
+          img {
+            width: 250px;
+          }
+        }
+
+        .middle_content {
+          display: flex;
+          justify-content: center;
+          gap: 2em;
+          align-items: center;
+
+          .item {
+            display: flex;
+            justify-content: center;
+            color: #fff;
+            font-size: 18px;
+          }
+        }
+
+        .phone_number {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 18px;
+          color: #fff;
+        }
+      }
+
+      .main_text {
+        color: #fff;
         position: absolute;
-        z-index: 1;
+        width: 90%;
+        height: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        .main_title {
+          width: 50%;
+          h1 {
+            font-size: 45px;
+          }
+        }
+      }
+
+      video {
+        // position: relative;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        z-index: -1;
         animation-name: fade;
         animation-duration: 0.5s;
       }
     }
 
-    video {
-      position: relative;
-      width: 100%;
-      height: 100%;
-      object-fit: contain;
-      z-index: 0;
-      animation-name: fade;
-      animation-duration: 0s;
-    }
-  }
+    @keyframes fade {
+      0% {
+        //   margin-left: 3em;
+        opacity: 0;
+      }
 
-  @keyframes fade {
-    0% {
-      //   margin-left: 3em;
-      opacity: 0;
-    }
-
-    100% {
-      opacity: 1;
+      100% {
+        opacity: 1;
+      }
     }
   }
 }

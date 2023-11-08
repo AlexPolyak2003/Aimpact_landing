@@ -27,22 +27,22 @@ const MyLazyComponent = lazy(
 const MainPage = () => {
   return (
     <div className={styles.wrapper}>
-      <Suspense>
-        <div className={styles.content}>
-          <MyLazyComponent>
-            <Videoplayer />
-          </MyLazyComponent>
+      {/* <Suspense> */}
+      <div className={styles.content}>
+        <MyLazyComponent>
+          <Videoplayer />
+        </MyLazyComponent>
 
-          <Head />
-          {/* <MyLazyComponent /> */}
-          <AboutUs />
-          <Direction_page />
-          <Industry />
-          <Project />
-          <ActualProject />
-          <Footer />
-        </div>
-      </Suspense>
+        <Head />
+        {/* <MyLazyComponent /> */}
+        <AboutUs />
+        <Direction_page />
+        <Industry />
+        <Project />
+        <ActualProject />
+        <Footer />
+      </div>
+      {/* </Suspense> */}
     </div>
   );
 };

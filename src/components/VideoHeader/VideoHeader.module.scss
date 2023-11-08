@@ -1,0 +1,49 @@
+@font-face {
+  font-family: "EuclidSquare";
+  src: url("../../fonts/EuclidSquare-Regular.ttf");
+}
+
+body {
+  font-family: "EuclidSquare";
+
+  .content {
+    width: 95%;
+    // border: 1px solid red;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    animation-name: fade;
+    animation-duration: 1s;
+    height: 5em;
+    gap: 16.9em;
+    .logo {
+      img {
+        width: 250px;
+      }
+    }
+
+    .middle_content {
+      display: flex;
+      justify-content: center;
+      gap: 2em;
+      align-items: center;
+
+      .item {
+        display: flex;
+        justify-content: center;
+        color: #fff;
+        font-size: 18px;
+      }
+    }
+
+    .phone_number {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 18px;
+      color: #fff;
+    }
+  }
+}
