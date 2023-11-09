@@ -33,7 +33,7 @@ const MainPage = () => {
           <Videoplayer />
         </MyLazyComponent>
 
-        <Head />
+        {/* <Head /> */}
         {/* <MyLazyComponent /> */}
         <AboutUs />
         <Direction_page />

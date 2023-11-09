@@ -6,44 +6,55 @@
 body {
   font-family: "EuclidSquare";
 
-  .content {
-    width: 95%;
-    // border: 1px solid red;
-    position: fixed;
+  .wrapper {
     display: flex;
     justify-content: center;
-    align-items: center;
-    color: #fff;
-    animation-name: fade;
-    animation-duration: 1s;
-    height: 5em;
-    gap: 16.9em;
-    .logo {
-      img {
-        width: 250px;
-      }
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+
+    &.wrapper-bg {
+      width: 100%;
+      background-color: #2d418d;
     }
 
-    .middle_content {
+    .content {
+      width: 95%;
       display: flex;
       justify-content: center;
-      gap: 2em;
       align-items: center;
+      color: #fff;
+      animation-name: fade;
+      animation-duration: 1s;
+      height: 5em;
+      gap: 16.9em;
+      .logo {
+        img {
+          width: 250px;
+        }
+      }
 
-      .item {
+      .middle_content {
         display: flex;
         justify-content: center;
-        color: #fff;
-        font-size: 18px;
-      }
-    }
+        gap: 2em;
+        align-items: center;
 
-    .phone_number {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-size: 18px;
-      color: #fff;
+        .item {
+          display: flex;
+          justify-content: center;
+          color: #fff;
+          font-size: 18px;
+        }
+      }
+
+      .phone_number {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 18px;
+        color: #fff;
+      }
     }
   }
 }
