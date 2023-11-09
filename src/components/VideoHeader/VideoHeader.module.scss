@@ -27,33 +27,39 @@ body {
       animation-name: fade;
       animation-duration: 1s;
       height: 5em;
-      gap: 16.9em;
+      gap: 20em;
       .logo {
         img {
-          width: 250px;
+          width: 200px;
         }
       }
 
       .middle_content {
         display: flex;
         justify-content: center;
-        gap: 2em;
+        gap: 1.5em;
         align-items: center;
 
         .item {
           display: flex;
           justify-content: center;
           color: #fff;
-          font-size: 18px;
+          font-size: 16px;
         }
       }
 
       .phone_number {
+        width: 200px;
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 18px;
         color: #fff;
+
+        h1 {
+          font-weight: 500;
+          margin-left: 3em;
+          font-size: 18px;
+        }
       }
     }
   }

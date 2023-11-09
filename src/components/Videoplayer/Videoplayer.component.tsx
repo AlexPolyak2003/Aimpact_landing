@@ -12,7 +12,9 @@ const Videoplayer = () => {
 
         <div className={styles.main_text}>
           <div className={styles.main_title}>
-            <h1>повышаем эффективность с помощью AI</h1>
+            <h1>
+              повышаем эффективность <br /> с помощью AI
+            </h1>
           </div>
           {/* <SimpleCarousel /> */}
         </div>
