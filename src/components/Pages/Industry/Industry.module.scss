@@ -10,7 +10,7 @@ body {
     height: 100%;
     display: flex;
     justify-content: center;
-    margin-top: 10em;
+    // margin-top: 10em;
 
     .content {
       height: 100%;
@@ -24,18 +24,26 @@ body {
         display: flex;
         flex-direction: column;
         .titles {
-          margin-bottom: 4em;
-          line-height: 20px;
-          font-size: 35px;
+          // margin-bottom: 4em;
+          margin-top: 4.2em;
+          line-height: 30px;
 
           .title_1 {
             color: #2d418d;
             font-weight: 500;
+            font-size: 65px;
           }
 
           .title_2 {
             color: #b0bde6;
             font-weight: 500;
+            font-size: 65px;
+          }
+        }
+
+        .img_position {
+          img {
+            margin-top: 3em;
           }
         }
       }
@@ -43,8 +51,8 @@ body {
       .right_block {
         display: flex;
         flex-direction: row;
+        margin-top: 5.5em;
         gap: 2em;
-        margin-top: 2em;
 
         .left_box {
           color: #3c415e;

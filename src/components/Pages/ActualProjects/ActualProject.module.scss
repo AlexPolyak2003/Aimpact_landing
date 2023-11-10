@@ -10,7 +10,7 @@ body {
     height: 100%;
     display: flex;
     justify-content: center;
-    margin-top: 10em;
+    margin-top: 4.2em;
 
     .content {
       height: 100%;
@@ -20,12 +20,6 @@ body {
       justify-content: center;
       flex-direction: column;
       //   gap: 10em;
-
-      .border_top {
-        height: 200px;
-        width: 100%;
-        // border: 1px solid black;
-      }
 
       .main_content {
         display: flex;
@@ -92,18 +86,12 @@ body {
             margin-bottom: 5.5em;
             h1 {
               position: absolute;
-              top: 8em;
+              top: 7.95em;
               font-size: 25px;
               font-weight: 500;
             }
           }
         }
-      }
-
-      .border_bottom {
-        height: 200px;
-        width: 100%;
-        // border: 1px solid black;
       }
     }
   }

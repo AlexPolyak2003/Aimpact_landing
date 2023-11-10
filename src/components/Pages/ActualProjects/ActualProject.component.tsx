@@ -7,7 +7,6 @@ const ActualProject = () => {
   return (
     <div className={styles.wrapper}>
       <div className={styles.content}>
-        <div className={styles.border_top}></div>
         <div className={styles.main_content}>
           <div className={styles.title}>
             <h1>актуальные проекты</h1>
@@ -31,8 +30,6 @@ const ActualProject = () => {
             </div>
           </div>
         </div>
-
-        <div className={styles.border_bottom}></div>
       </div>
     </div>
   );

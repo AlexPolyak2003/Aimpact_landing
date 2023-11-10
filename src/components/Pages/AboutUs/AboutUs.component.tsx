@@ -4,10 +4,6 @@ const AboutUs = () => {
   return (
     <div className={styles.wrapper}>
       <div className={styles.content}>
-        <div className={styles.top_position}>
-          <div className={styles.top}></div>
-        </div>
-
         <div className={styles.text_position}>
           <div className={styles.text}>
             <div className={styles.title}>
@@ -45,10 +41,6 @@ const AboutUs = () => {
               </p>
             </div>
           </div>
-        </div>
-
-        <div className={styles.bottom_position}>
-          <div className={styles.bottom}></div>
         </div>
       </div>
     </div>

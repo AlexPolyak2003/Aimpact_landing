@@ -12,7 +12,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 10em;
+    margin-top: 4.2em;
 
     .content {
       height: 100%;
@@ -21,18 +21,6 @@ body {
       align-items: center;
       justify-content: center;
       flex-direction: column;
-      .border_top {
-        height: 150px;
-        width: 100%;
-        border: 1px solid black;
-        margin-top: 5em;
-      }
-
-      .border_bottom {
-        height: 150px;
-        width: 100%;
-        border: 1px solid black;
-      }
 
       .footer {
         width: 100%;
@@ -40,7 +28,6 @@ body {
         display: flex;
         justify-content: center;
         background-color: #2d418d;
-        border: 1px solid black;
 
         .footer_content {
           display: flex;
