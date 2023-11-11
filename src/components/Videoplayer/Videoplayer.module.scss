@@ -13,11 +13,9 @@ body {
       display: flex;
       justify-content: center;
       position: relative;
-      // align-items: center;
 
       .header {
         width: 95%;
-        // border: 1px solid red;
         position: fixed;
         display: flex;
         justify-content: center;
@@ -64,29 +62,49 @@ body {
         justify-content: flex-start;
         align-items: center;
         .main_title {
-          // margin-left: 3em;
           line-height: 5.2em;
           width: 65%;
+          @media screen and (max-width: 1210px) {
+            line-height: 4.2em;
+          }
+
+          @media screen and (max-width: 870px) {
+            line-height: 3.2em;
+          }
           h1 {
             font-size: 3.5em;
+
+            @media screen and (max-width: 1210px) {
+              font-size: 2.5em;
+            }
+
+            @media screen and (max-width: 870px) {
+              font-size: 2em;
+            }
           }
         }
       }
 
       video {
-        // position: relative;
         width: 100%;
         height: 100vh;
         object-fit: fill;
         z-index: -1;
         animation-name: fade;
         animation-duration: 0.5s;
+
+        @media screen and (max-width: 1200px) {
+          height: 70vh;
+        }
+
+        @media screen and (max-width: 776px) {
+          // height: 60vh;
+        }
       }
     }
 
     @keyframes fade {
       0% {
-        //   margin-left: 3em;
         opacity: 0;
       }
 

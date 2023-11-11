@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 const VideoHeader = () => {
   const [color, setColor] = useState(false);
   const changeBackground = () => {
-    if (window.scrollY >= 620) {
+    if (window.scrollY >= 20) {
       setColor(true);
     } else {
       setColor(false);
@@ -25,9 +25,9 @@ const VideoHeader = () => {
         </div>
         <div className={styles.middle_content}>
           <div className={styles.item}>о нас</div>
-          <div className={styles.item}> сферы деятельности</div>
+          <div className={styles.item_long}>сферы деятельности</div>
           <div className={styles.item}>кейсы</div>
-          <div className={styles.item}>контакты</div>
+          <div className={styles.item_contact}>контакты</div>
         </div>
 
         <div className={styles.phone_number}>
