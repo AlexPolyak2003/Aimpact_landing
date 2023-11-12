@@ -5,7 +5,7 @@ import email_icon from "../../icons/Footer/mail icon.svg";
 
 const Footer = () => {
   return (
-    <div className={styles.wrapper}>
+    <div id="contacts" className={styles.wrapper}>
       <div className={styles.content}>
         <div className={styles.border_top}></div>
         <div className={styles.footer}>

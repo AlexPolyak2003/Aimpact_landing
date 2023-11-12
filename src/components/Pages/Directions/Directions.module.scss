@@ -19,37 +19,116 @@ body {
       flex-direction: row;
       gap: 18em;
 
+      @media screen and (max-width: 1300px) {
+        gap: 14em;
+      }
+
+      @media screen and (max-width: 1200px) {
+        gap: 10em;
+      }
+
+      @media screen and (max-width: 1070px) {
+        gap: 5em;
+      }
+
+      @media screen and (max-width: 980px) {
+        gap: 2em;
+      }
+
       .left_box {
         display: flex;
         flex-direction: column;
 
         .titles {
-          margin-top: 3.7em;
+          margin-top: 5em;
           line-height: 30px;
 
           .title_1 {
             color: #2d418d;
             font-weight: 500;
             font-size: 65px;
+            @media screen and (max-width: 1200px) {
+              font-size: 55px;
+            }
+
+            @media screen and (max-width: 1070px) {
+              font-size: 50px;
+            }
+
+            @media screen and (max-width: 980px) {
+              font-size: 45px;
+            }
+
+            @media screen and (max-width: 910px) {
+              font-size: 40px;
+            }
+            @media screen and (max-width: 860px) {
+              font-size: 35px;
+            }
           }
 
           .title_2 {
             color: #b0bde6;
             font-weight: 500;
             font-size: 65px;
+            @media screen and (max-width: 1200px) {
+              font-size: 55px;
+            }
+
+            @media screen and (max-width: 1070px) {
+              font-size: 50px;
+            }
+
+            @media screen and (max-width: 980px) {
+              font-size: 45px;
+            }
+
+            @media screen and (max-width: 910px) {
+              font-size: 40px;
+            }
+            @media screen and (max-width: 860px) {
+              font-size: 35px;
+            }
           }
         }
 
         .mozg_position {
           margin-top: 3em;
+
+          img {
+            @media screen and (max-width: 1200px) {
+              width: 450px;
+            }
+
+            @media screen and (max-width: 1000px) {
+              width: 425px;
+            }
+
+            @media screen and (max-width: 900px) {
+              width: 400px;
+            }
+
+            @media screen and (max-width: 900px) {
+              width: 375px;
+            }
+          }
         }
       }
 
       .right_box {
+        height: 60%;
         display: flex;
         flex-direction: column;
-        margin-top: 5em;
+        margin-top: 6em;
         gap: 3em;
+
+        @media screen and (max-width: 1400px) {
+          gap: 2em;
+        }
+
+        @media screen and (max-width: 1000px) {
+          gap: 1.5em;
+        }
 
         .points {
           display: flex;
@@ -59,8 +138,15 @@ body {
           width: 100%;
 
           p {
-            font-size: 22px;
-            // width: 600px;
+            font-size: 23px;
+
+            @media screen and (max-width: 1400px) {
+              font-size: 20px;
+            }
+
+            @media screen and (max-width: 1070px) {
+              font-size: 18px;
+            }
           }
 
           img {
@@ -76,9 +162,23 @@ body {
           width: 100%;
           line-height: 30px;
 
+          @media screen and (max-width: 1070px) {
+            line-height: 25px;
+          }
+
+          @media screen and (max-width: 860px) {
+            line-height: 23px;
+          }
+
           p {
-            font-size: 22px;
-            // width: 600px;
+            font-size: 23px;
+            @media screen and (max-width: 1400px) {
+              font-size: 20px;
+            }
+
+            @media screen and (max-width: 1070px) {
+              font-size: 18px;
+            }
           }
 
           img {

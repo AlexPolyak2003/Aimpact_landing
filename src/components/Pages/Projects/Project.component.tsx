@@ -6,7 +6,7 @@ import kazakh_icon from "../../../icons/Projects/kazaxstan nalog.svg";
 
 const Project = () => {
   return (
-    <div className={styles.wrapper}>
+    <div id="cases" className={styles.wrapper}>
       <div className={styles.content}>
         <div className={styles.title}>
           <h1>проекты команды</h1>

@@ -4,7 +4,7 @@ import kruzhok from "../../../icons/Directions/kryzhok_punkt.svg";
 
 const Direction_page = () => {
   return (
-    <div className={styles.wrapper}>
+    <div id="directions" className={styles.wrapper}>
       <div className={styles.content}>
         <div className={styles.left_box}>
           <div className={styles.titles}>

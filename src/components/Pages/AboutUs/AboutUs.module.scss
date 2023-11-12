@@ -11,7 +11,7 @@ body {
     height: 100%;
     display: flex;
     justify-content: center;
-    margin-top: 2em;
+    // margin-top: 2em;
 
     .content {
       height: 100%;
@@ -19,6 +19,7 @@ body {
       display: flex;
       align-items: flex-start;
       flex-direction: column;
+      margin-top: 3.5em;
 
       .text_position {
         display: flex;
@@ -33,27 +34,102 @@ body {
           gap: 16.5em;
 
           .title {
-            // margin-top: 0.5em;
+            width: 250px;
 
             h1 {
               font-weight: 500;
               color: #2d418d;
               font-size: 65px;
+
+              @media screen and (max-width: 1200px) {
+                font-size: 55px;
+              }
+
+              @media screen and (max-width: 1070px) {
+                font-size: 50px;
+              }
+
+              @media screen and (max-width: 980px) {
+                font-size: 45px;
+              }
+
+              @media screen and (max-width: 910px) {
+                font-size: 40px;
+              }
+              @media screen and (max-width: 860px) {
+                font-size: 35px;
+              }
             }
           }
 
           .main {
             margin-top: 2em;
-            height: 600px;
+            height: 60%;
             width: 1000px;
             line-height: 33px;
+
+            @media screen and (max-width: 1200px) {
+              line-height: 28px;
+            }
+
+            @media screen and (max-width: 1070px) {
+              line-height: 25px;
+            }
+
+            @media screen and (max-width: 980px) {
+              line-height: 23px;
+              margin-top: 1em;
+            }
+
+            // @media screen and (max-width: 860px) {
+            //   line-height: 20px;
+            // }
+
             p {
               font-size: 23px;
 
-              em {
+              @media screen and (max-width: 1400px) {
+                font-size: 20px;
+              }
+
+              @media screen and (max-width: 1070px) {
+                font-size: 18px;
+              }
+
+              .aimpact_first {
                 font-size: 25px;
                 font-style: normal;
                 color: #2d418d;
+
+                @media screen and (max-width: 1400px) {
+                  font-size: 23px;
+                }
+
+                @media screen and (max-width: 1070px) {
+                  font-size: 20px;
+                }
+
+                @media screen and (max-width: 860px) {
+                  font-size: 18px;
+                }
+              }
+
+              .aimpact_second {
+                font-size: 25px;
+                font-style: normal;
+                color: #2d418d;
+                margin-left: 0.25em;
+
+                @media screen and (max-width: 1400px) {
+                  font-size: 23px;
+                }
+
+                @media screen and (max-width: 1070px) {
+                  font-size: 20px;
+                }
+                @media screen and (max-width: 860px) {
+                  font-size: 18px;
+                }
               }
             }
           }
