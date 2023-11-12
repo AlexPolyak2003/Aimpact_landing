@@ -6,7 +6,7 @@ import SimpleCarousel from "../SimpleCarousel/SimpleCarousel.component";
 
 const Videoplayer = () => {
   return (
-    <div className={styles.wrapper}>
+    <div id="logo" className={styles.wrapper}>
       <div className={styles.content}>
         <VideoHeader />
 

@@ -21,9 +21,16 @@ const VideoHeader = () => {
       }
     >
       <div className={styles.content}>
-        <div className={styles.logo}>
+        <Link
+          to="logo"
+          spy={true}
+          smooth={true}
+          duration={1000}
+          className={styles.logo}
+        >
           <img src={beloe_logo} alt="" />
-        </div>
+        </Link>
+
         <nav className={styles.middle_content}>
           <Link
             to="about_us"

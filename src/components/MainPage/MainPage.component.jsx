@@ -1,8 +1,5 @@
-import React from "react";
 import styles from "./MainPage.module.scss";
-// import VideoPlayer from "../VideoPlayer/VideoPlayer.component";
-import { Suspense, lazy } from "react";
-import Head from "../Header/Header.component";
+import { lazy } from "react";
 import AboutUs from "../Pages/AboutUs/AboutUs.component";
 import Direction_page from "../Pages/Directions/Directions.component";
 import Industry from "../Pages/Industry/Industry.component";
