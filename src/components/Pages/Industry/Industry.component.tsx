@@ -10,7 +10,7 @@ const Industry = () => {
             <h1 className={styles.title_1}>направления</h1>
             <h1 className={styles.title_2}>индустрии</h1>
           </div>
-          <div className={styles.img_position}>
+          <div className={styles.mozg_position}>
             <img src={mozg} alt="" />
           </div>
         </div>

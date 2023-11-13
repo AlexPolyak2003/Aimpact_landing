@@ -100,16 +100,24 @@ body {
               width: 450px;
             }
 
-            @media screen and (max-width: 1000px) {
+            @media screen and (max-width: 1100px) {
               width: 425px;
             }
 
-            @media screen and (max-width: 900px) {
+            @media screen and (max-width: 1030px) {
               width: 400px;
             }
 
-            @media screen and (max-width: 900px) {
+            @media screen and (max-width: 950px) {
               width: 375px;
+            }
+
+            @media screen and (max-width: 920px) {
+              width: 350px;
+            }
+
+            @media screen and (max-width: 880px) {
+              width: 310px;
             }
           }
         }
@@ -144,8 +152,12 @@ body {
               font-size: 20px;
             }
 
-            @media screen and (max-width: 1070px) {
+            @media screen and (max-width: 1230px) {
               font-size: 18px;
+            }
+
+            @media screen and (max-width: 1070px) {
+              font-size: 16px;
             }
           }
 
@@ -176,8 +188,12 @@ body {
               font-size: 20px;
             }
 
-            @media screen and (max-width: 1070px) {
+            @media screen and (max-width: 1230px) {
               font-size: 18px;
+            }
+
+            @media screen and (max-width: 1070px) {
+              font-size: 16px;
             }
           }
 
