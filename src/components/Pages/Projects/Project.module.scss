@@ -238,12 +238,17 @@ body {
             align-items: center;
           }
 
+          @media screen and (max-width: 776px) {
+            display: none;
+          }
+
           .first_block,
           .second_block,
           .third_block,
           .fourth_block {
             @media screen and (max-width: 1200px) {
-              // padding: 10px;
+              display: grid;
+              place-items: center;
             }
 
             .zaymigo {
@@ -267,6 +272,32 @@ body {
                 width: 360px;
                 font-size: 14px;
               }
+            }
+          }
+        }
+
+        .blocks_mobile {
+          display: none;
+
+          @media screen and (max-width: 776px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          }
+
+          .first_block,
+          .second_block,
+          .third_block,
+          .fourth_block {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            margin-top: 1em;
+            width: 60%;
+
+            p {
+              font-size: 17px;
             }
           }
         }

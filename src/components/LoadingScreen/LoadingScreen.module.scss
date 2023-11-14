@@ -1,16 +1,24 @@
 .wrapper {
-  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 
   .content {
+    height: 100vh;
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 1em;
     justify-content: center;
     align-items: center;
-    width: 100%;
+
+    @media screen and (max-width: 430px) {
+      gap: 0.5em;
+    }
+
+    @media screen and (max-width: 370px) {
+      gap: 0.25em;
+    }
 
     .logo {
       height: 450px;
@@ -18,9 +26,47 @@
       align-items: center;
       animation: 2s show ease;
 
+      @media screen and (max-width: 750px) {
+        height: 350px;
+      }
+
+      @media screen and (max-width: 630px) {
+        height: 320px;
+      }
+
+      @media screen and (max-width: 430px) {
+        height: 280px;
+      }
+
+      @media screen and (max-width: 370px) {
+        height: 240px;
+      }
+
       img {
-        // transform: scale(0.7);
         width: 400px;
+
+        @media screen and (max-width: 1200px) {
+          width: 350px;
+        }
+        @media screen and (max-width: 900px) {
+          width: 300px;
+        }
+
+        @media screen and (max-width: 750px) {
+          width: 250px;
+        }
+
+        @media screen and (max-width: 630px) {
+          width: 225px;
+        }
+
+        @media screen and (max-width: 430px) {
+          width: 200px;
+        }
+
+        @media screen and (max-width: 370px) {
+          width: 180px;
+        }
       }
     }
 
@@ -29,6 +75,34 @@
 
       img {
         width: 1000px;
+
+        @media screen and (max-width: 1200px) {
+          width: 800px;
+
+          @media screen and (max-width: 900px) {
+            width: 700px;
+          }
+
+          @media screen and (max-width: 750px) {
+            width: 600px;
+          }
+
+          @media screen and (max-width: 630px) {
+            width: 500px;
+          }
+
+          @media screen and (max-width: 550px) {
+            width: 400px;
+          }
+
+          @media screen and (max-width: 430px) {
+            width: 350px;
+          }
+
+          @media screen and (max-width: 370px) {
+            width: 300px;
+          }
+        }
       }
     }
 
@@ -37,6 +111,30 @@
 
       img {
         width: 800px;
+
+        @media screen and (max-width: 1200px) {
+          width: 600px;
+        }
+
+        @media screen and (max-width: 900px) {
+          width: 500px;
+        }
+
+        @media screen and (max-width: 750px) {
+          width: 450px;
+        }
+
+        @media screen and (max-width: 630px) {
+          width: 380px;
+        }
+
+        @media screen and (max-width: 430px) {
+          width: 325px;
+        }
+
+        @media screen and (max-width: 370px) {
+          width: 285px;
+        }
       }
     }
 

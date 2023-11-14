@@ -69,6 +69,16 @@ body {
             align-items: center;
             margin-top: 2em;
 
+            @media screen and (max-width: 500px) {
+              width: 300px;
+            }
+
+            img {
+              @media screen and (max-width: 500px) {
+                width: 270px;
+              }
+            }
+
             h1 {
               margin-left: 0.5em;
               font-size: 25px;
@@ -76,6 +86,16 @@ body {
 
               @media screen and (max-width: 1000px) {
                 font-size: 23px;
+              }
+
+              @media screen and (max-width: 776px) {
+                font-size: 20px;
+                margin-top: 1em;
+              }
+
+              @media screen and (max-width: 500px) {
+                font-size: 20px;
+                margin-top: 1.2em;
               }
             }
           }
@@ -85,6 +105,10 @@ body {
           display: flex;
           justify-content: space-between;
           align-items: center;
+
+          @media screen and (max-width: 776px) {
+            display: none;
+          }
 
           .vnukovo {
             position: relative;
@@ -136,6 +160,67 @@ body {
                 position: absolute;
                 top: 6.9em;
                 font-size: 23px;
+              }
+            }
+          }
+        }
+
+        .companies_mobile {
+          display: none;
+
+          @media screen and (max-width: 776px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 5em;
+            margin-top: 3em;
+          }
+
+          .vnukovo {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            img {
+              width: 330px;
+
+              @media screen and (max-width: 500px) {
+                width: 300px;
+              }
+            }
+            h1 {
+              position: absolute;
+              top: 3.9em;
+              font-size: 20px;
+              font-weight: 500;
+            }
+          }
+
+          .zarubezhneft {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 3.5em;
+
+            img {
+              width: 330px;
+              @media screen and (max-width: 500px) {
+                width: 300px;
+              }
+            }
+            h1 {
+              position: absolute;
+              top: 7.95em;
+              font-size: 20px;
+              font-weight: 500;
+              top: 8.5em;
+
+              @media screen and (max-width: 500px) {
+                top: 7.95em;
               }
             }
           }

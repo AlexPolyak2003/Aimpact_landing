@@ -29,6 +29,19 @@ const ActualProject = () => {
               <h1>Зарубежнефть</h1>
             </div>
           </div>
+
+          {/* мобильная версия */}
+
+          <div className={styles.companies_mobile}>
+            <div className={styles.vnukovo}>
+              <img src={vnukovo} alt="" />
+              <h1>Аэропорт Внуково</h1>
+            </div>
+            <div className={styles.zarubezhneft}>
+              <img src={zarubezneft} alt="" />
+              <h1>Зарубежнефть</h1>
+            </div>
+          </div>
         </div>
       </div>
     </div>

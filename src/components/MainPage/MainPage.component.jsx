@@ -29,7 +29,6 @@ const MainPage = () => {
         <MyLazyComponent>
           <Videoplayer />
         </MyLazyComponent>
-
         {/* <Head /> */}
         {/* <MyLazyComponent /> */}
         <AboutUs />
