@@ -72,13 +72,11 @@ body {
             line-height: 3.2em;
           }
 
-          @media screen and (max-width: 700px) {
+          @media screen and (max-width: 776px) {
             line-height: 2.2em;
+            width: 80%;
           }
 
-          @media screen and (max-width: 530px) {
-            line-height: 1.8em;
-          }
           h1 {
             font-size: 3.5em;
 
@@ -90,13 +88,13 @@ body {
               font-size: 2em;
             }
 
-            @media screen and (max-width: 700px) {
-              font-size: 1.5em;
+            @media screen and (max-width: 776px) {
+              font-size: 1.7em;
             }
 
-            @media screen and (max-width: 530px) {
-              font-size: 1.2em;
-            }
+            // @media screen and (max-width: 530px) {
+            //   font-size: 1.2em;
+            // }
 
             // @media screen and (max-width: 420px) {
             //   font-size: 1em;
