@@ -30,11 +30,29 @@ body {
         height: 100%;
 
         .title {
-          color: #2d418d;
-          font-size: 25px;
-
           h1 {
+            color: #2d418d;
             font-weight: 500;
+            font-size: 65px;
+
+            @media screen and (max-width: 1200px) {
+              font-size: 55px;
+            }
+
+            @media screen and (max-width: 1070px) {
+              font-size: 50px;
+            }
+
+            @media screen and (max-width: 980px) {
+              font-size: 45px;
+            }
+
+            @media screen and (max-width: 910px) {
+              font-size: 40px;
+            }
+            @media screen and (max-width: 860px) {
+              font-size: 35px;
+            }
           }
         }
 
@@ -50,10 +68,15 @@ body {
             flex-direction: column;
             align-items: center;
             margin-top: 2em;
+
             h1 {
               margin-left: 0.5em;
               font-size: 25px;
               font-weight: 500;
+
+              @media screen and (max-width: 1000px) {
+                font-size: 23px;
+              }
             }
           }
         }
@@ -69,11 +92,20 @@ body {
             flex-direction: column;
             align-items: center;
             justify-content: center;
+
+            img {
+              @media screen and (max-width: 1000px) {
+                width: 330px;
+              }
+            }
             h1 {
               position: absolute;
               top: 3.9em;
               font-size: 25px;
               font-weight: 500;
+              @media screen and (max-width: 1000px) {
+                font-size: 23px;
+              }
             }
           }
 
@@ -84,11 +116,27 @@ body {
             align-items: center;
             justify-content: center;
             margin-bottom: 5.5em;
+
+            @media screen and (max-width: 1000px) {
+              margin-bottom: 3.5em;
+            }
+
+            img {
+              @media screen and (max-width: 1000px) {
+                width: 330px;
+              }
+            }
             h1 {
               position: absolute;
               top: 7.95em;
               font-size: 25px;
               font-weight: 500;
+
+              @media screen and (max-width: 1000px) {
+                position: absolute;
+                top: 6.9em;
+                font-size: 23px;
+              }
             }
           }
         }
