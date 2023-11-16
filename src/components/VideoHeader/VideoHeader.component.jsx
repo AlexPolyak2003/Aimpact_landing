@@ -20,8 +20,6 @@ const VideoHeader = () => {
   const item_3 = document.getElementById("item_3");
   const item_4 = document.getElementById("item_4");
 
-  // const middle_content = document.getElementById("middle_content");
-
   // Первый элемент
 
   item_1?.addEventListener("mouseover", () => {
@@ -29,9 +27,9 @@ const VideoHeader = () => {
     item_3.style.opacity = "0.5";
     item_4.style.opacity = "0.5";
 
-    item_2.style.transition = "opacity 0.2s linear 0s";
-    item_3.style.transition = "opacity 0.2s linear 0s";
-    item_4.style.transition = "opacity 0.2s linear 0s";
+    item_2.style.transition = "opacity 0.2s";
+    item_3.style.transition = "opacity 0.2s";
+    item_4.style.transition = "opacity 0.2s";
   });
 
   item_1?.addEventListener("mouseout", () => {
@@ -47,9 +45,9 @@ const VideoHeader = () => {
     item_3.style.opacity = "0.5";
     item_4.style.opacity = "0.5";
 
-    item_1.style.transition = "opacity 0.2s linear 0s";
-    item_3.style.transition = "opacity 0.2s linear 0s";
-    item_4.style.transition = "opacity 0.2s linear 0s";
+    item_1.style.transition = "opacity 0.2s";
+    item_3.style.transition = "opacity 0.2s";
+    item_4.style.transition = "opacity 0.2s";
   });
 
   item_2?.addEventListener("mouseout", () => {
@@ -65,9 +63,9 @@ const VideoHeader = () => {
     item_2.style.opacity = "0.5";
     item_4.style.opacity = "0.5";
 
-    item_1.style.transition = "opacity 0.2s linear 0s";
-    item_2.style.transition = "opacity 0.2s linear 0s";
-    item_4.style.transition = "opacity 0.2s linear 0s";
+    item_1.style.transition = "opacity 0.2s";
+    item_2.style.transition = "opacity 0.2s";
+    item_4.style.transition = "opacity 0.2s";
   });
 
   item_3?.addEventListener("mouseout", () => {
@@ -83,9 +81,9 @@ const VideoHeader = () => {
     item_2.style.opacity = "0.5";
     item_3.style.opacity = "0.5";
 
-    item_1.style.transition = "opacity 0.2s linear 0s";
-    item_2.style.transition = "opacity 0.2s linear 0s";
-    item_3.style.transition = "opacity 0.2s linear 0s";
+    item_1.style.transition = "opacity 0.2s";
+    item_2.style.transition = "opacity 0.2s";
+    item_3.style.transition = "opacity 0.2s";
   });
 
   item_4?.addEventListener("mouseout", () => {

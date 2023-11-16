@@ -169,8 +169,8 @@ body {
             font-size: 14px;
           }
 
-          &:hover > .item_long {
-            color: #fff;
+          &:hover.item_long {
+            opacity: 0.5;
           }
         }
 

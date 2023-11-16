@@ -1,3 +1,6 @@
+import React from "react";
+import ReactDOM from "react-dom";
+import { StrictMode } from "react";
 import styles from "./Directions.module.scss";
 import mozg from "../../../icons/Directions/mozg.svg";
 import kruzhok from "../../../icons/Directions/kryzhok_punkt.svg";
@@ -8,8 +11,12 @@ const Direction_page = () => {
       <div className={styles.content}>
         <div className={styles.left_box}>
           <div className={styles.titles}>
-            <h1 className={styles.title_1}>направления</h1>
-            <h1 className={styles.title_2}>индустрии</h1>
+            <h1 id="btn_1" className={styles.title_1}>
+              направления
+            </h1>
+            <h1 id="btn_2" className={styles.title_2}>
+              индустрии
+            </h1>
           </div>
 
           <div className={styles.mozg_position}>
