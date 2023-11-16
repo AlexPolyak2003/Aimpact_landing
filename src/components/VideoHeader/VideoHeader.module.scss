@@ -136,6 +136,8 @@ body {
         justify-content: center;
         gap: 1.5em;
         align-items: center;
+        color: #fff;
+        transition: 0.5s;
 
         @media screen and (max-width: 1100px) {
           gap: 1em;
@@ -159,17 +161,16 @@ body {
           display: flex;
           width: 60px;
           justify-content: center;
-          color: #fff;
           font-size: 16px;
+          color: #fff;
           cursor: pointer;
 
           @media screen and (max-width: 930px) {
             font-size: 14px;
           }
 
-          &:hover {
-            color: lightgrey;
-            transition: 0.2s;
+          &:hover > .item_long {
+            color: #fff;
           }
         }
 
@@ -184,11 +185,6 @@ body {
           @media screen and (max-width: 930px) {
             font-size: 14px;
           }
-
-          &:hover {
-            color: lightgrey;
-            transition: 0.2s;
-          }
         }
 
         .item_contact {
@@ -201,11 +197,6 @@ body {
 
           @media screen and (max-width: 930px) {
             font-size: 14px;
-          }
-
-          &:hover {
-            color: lightgrey;
-            transition: 0.2s;
           }
         }
       }
