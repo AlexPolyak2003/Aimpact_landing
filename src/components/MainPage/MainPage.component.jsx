@@ -17,20 +17,13 @@ const MyLazyComponent = lazy(
     })
 );
 
-// const MyLazyComponent = lazy(() =>
-//   import("../Videoplayer/Videoplayer.component")
-// );
-
 const MainPage = () => {
   return (
     <div className={styles.wrapper}>
-      {/* <Suspense> */}
       <div className={styles.content}>
         <MyLazyComponent>
           <Videoplayer />
         </MyLazyComponent>
-        {/* <Head /> */}
-        {/* <MyLazyComponent /> */}
         <AboutUs />
         <Direction_page />
         <Industry />
@@ -38,7 +31,6 @@ const MainPage = () => {
         <ActualProject />
         <Footer />
       </div>
-      {/* </Suspense> */}
     </div>
   );
 };

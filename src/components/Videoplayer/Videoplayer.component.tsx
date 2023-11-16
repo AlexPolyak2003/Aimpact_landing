@@ -1,8 +1,7 @@
 import styles from "./Videoplayer.module.scss";
 import video from "../../../src/videos/Video_2.mp4";
-import beloe_logo from "../../icons/Header/beloe_logo.svg";
 import VideoHeader from "../VideoHeader/VideoHeader.component";
-import SimpleCarousel from "../SimpleCarousel/SimpleCarousel.component";
+import SliderComponent from "../Slider/Slider.component";
 
 const Videoplayer = () => {
   return (
@@ -16,7 +15,10 @@ const Videoplayer = () => {
               повышаем эффективность <br /> с помощью AI
             </h1>
           </div>
-          {/* <SimpleCarousel /> */}
+
+          <div className={styles.slider_position}>
+            <SliderComponent />
+          </div>
         </div>
 
         <video loop autoPlay muted>

@@ -61,6 +61,7 @@ body {
         display: flex;
         justify-content: flex-start;
         align-items: center;
+
         .main_title {
           line-height: 5.2em;
           width: 65%;
@@ -75,6 +76,7 @@ body {
           @media screen and (max-width: 776px) {
             line-height: 2.2em;
             width: 80%;
+            position: relative;
           }
 
           h1 {
@@ -99,6 +101,16 @@ body {
             // @media screen and (max-width: 420px) {
             //   font-size: 1em;
             // }
+          }
+        }
+
+        .slider_position {
+          margin-top: 25em;
+
+          @media screen and (max-width: 776px) {
+            position: fixed;
+            margin-bottom: 5em;
+            margin-right: 5em;
           }
         }
       }

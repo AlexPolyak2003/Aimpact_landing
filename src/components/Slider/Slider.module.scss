@@ -1,0 +1,50 @@
+@font-face {
+  font-family: "EuclidSquare";
+  src: url("../../fonts/EuclidSquare-Regular.ttf");
+}
+
+.wrapper {
+  height: 100%;
+  width: 100%;
+
+  .content {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    .slider {
+      //   width: 30%;
+      //   height: 50px;
+      //   border: 1px solid black;
+      display: flex;
+      flex-direction: column;
+
+      //   .id_3 {
+      //     p {
+      //       //   margin-top: 1em;
+      //     }
+      //   }
+
+      .text {
+        height: 100%;
+        p {
+          font-family: "EuclidSquare";
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-left: 1.65em;
+          height: 94px;
+          font-size: 19px;
+          line-height: 27px;
+
+          @media screen and (max-width: 776px) {
+            margin-left: 0em;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}

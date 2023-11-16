@@ -9,3 +9,4 @@ declare module "*.webm" {
 }
 
 declare module "react-slick";
+declare module "jquery";
