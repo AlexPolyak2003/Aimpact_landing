@@ -1,6 +1,6 @@
 @font-face {
   font-family: "EuclidSquare";
-  src: url("../../../fonts/EuclidSquare-Regular.ttf");
+  src: url("../../../../fonts/EuclidSquare-Regular.ttf");
 }
 
 body {
@@ -37,94 +37,6 @@ body {
 
       @media screen and (max-width: 776px) {
         display: none;
-      }
-      .left_block {
-        display: flex;
-        flex-direction: column;
-        .titles {
-          // margin-bottom: 4em;
-          margin-top: 4.2em;
-          line-height: 30px;
-
-          .title_1 {
-            color: #b0bde6;
-            font-weight: 500;
-            font-size: 65px;
-            @media screen and (max-width: 1200px) {
-              font-size: 55px;
-            }
-
-            @media screen and (max-width: 1070px) {
-              font-size: 50px;
-            }
-
-            @media screen and (max-width: 980px) {
-              font-size: 45px;
-            }
-
-            @media screen and (max-width: 910px) {
-              font-size: 40px;
-            }
-            @media screen and (max-width: 860px) {
-              font-size: 35px;
-            }
-          }
-
-          .title_2 {
-            color: #2d418d;
-            font-weight: 500;
-            font-size: 65px;
-
-            @media screen and (max-width: 1200px) {
-              font-size: 55px;
-            }
-
-            @media screen and (max-width: 1070px) {
-              font-size: 50px;
-            }
-
-            @media screen and (max-width: 980px) {
-              font-size: 45px;
-            }
-
-            @media screen and (max-width: 910px) {
-              font-size: 40px;
-            }
-            @media screen and (max-width: 860px) {
-              font-size: 35px;
-            }
-          }
-        }
-
-        .mozg_position {
-          img {
-            margin-top: 3em;
-
-            @media screen and (max-width: 1200px) {
-              width: 450px;
-            }
-
-            @media screen and (max-width: 1100px) {
-              width: 425px;
-            }
-
-            @media screen and (max-width: 1030px) {
-              width: 400px;
-            }
-
-            @media screen and (max-width: 950px) {
-              width: 375px;
-            }
-
-            @media screen and (max-width: 920px) {
-              width: 350px;
-            }
-
-            @media screen and (max-width: 880px) {
-              width: 310px;
-            }
-          }
-        }
       }
 
       .right_block {
