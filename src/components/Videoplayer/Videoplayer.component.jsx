@@ -1,5 +1,5 @@
 import styles from "./Videoplayer.module.scss";
-import video from "../../../src/videos/avi.avi";
+import video from "../../../src/videos/mkv.mkv";
 import VideoHeader from "../VideoHeader/VideoHeader.component";
 import SliderComponent from "../Slider/Slider.component";
 

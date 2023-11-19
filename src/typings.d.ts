@@ -18,5 +18,10 @@ declare module "*.avi" {
   export default value;
 }
 
+declare module "*.mkv" {
+  const value: any;
+  export default value;
+}
+
 declare module "react-slick";
 declare module "jquery";
