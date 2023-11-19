@@ -13,5 +13,10 @@ declare module "*.m2ts" {
   export default value;
 }
 
+declare module "*.avi" {
+  const value: any;
+  export default value;
+}
+
 declare module "react-slick";
 declare module "jquery";
