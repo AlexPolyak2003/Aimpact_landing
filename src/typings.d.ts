@@ -8,5 +8,10 @@ declare module "*.webm" {
   export default value;
 }
 
+declare module "*.m2ts" {
+  const value: any;
+  export default value;
+}
+
 declare module "react-slick";
 declare module "jquery";

@@ -1,9 +1,10 @@
+import React, { ReactElement } from "react";
 import styles from "./VideoHeader.module.scss";
 import beloe_logo from "../../icons/Header/beloe_logo.svg";
-import { useEffect, useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-scroll";
 
-const VideoHeader = () => {
+const VideoHeader = (): ReactElement => {
   const [color, setColor] = useState(false);
   const changeBackground = () => {
     if (window.scrollY >= 20) {
@@ -15,90 +16,85 @@ const VideoHeader = () => {
 
   window.addEventListener("scroll", changeBackground);
 
-  useEffect(() => {
-    const item_1: any = document.getElementById("item_1");
-    const item_2: any = document.getElementById("item_2");
-    const item_3: any = document.getElementById("item_3");
-    const item_4: any = document.getElementById("item_4");
-  }, []);
+  const item_1: HTMLElement | null = document.getElementById("item_1");
+  const item_2: HTMLElement | null = document.getElementById("item_2");
+  const item_3: HTMLElement | null = document.getElementById("item_3");
+  const item_4: HTMLElement | null = document.getElementById("item_4");
 
-  // function f1() {
-  //   item_2.style.opacity = "0.5";
-  //   item_3.style.opacity = "0.5";
-  //   item_1.style.opacity = "0.5";
-  //   item_4.style.opacity = "1";
+  //  function f1() {
+  //     if (item_2 && item_3 && item_1 && item_4) {
+  //     item_2.style.opacity = "0.5";
+  //     item_3.style.opacity = "0.5";
+  //     item_1.style.opacity = "0.5";
+  //     item_4.style.opacity = "1";
 
-  //   item_2.style.transition = "opacity 0.2s";
-  //   item_3.style.transition = "opacity 0.2s";
-  //   item_1.style.transition = "opacity 0.2s";
+  //     item_2.style.transition = "opacity 0.2s";
+  //     item_3.style.transition = "opacity 0.2s";
+  //     item_1.style.transition = "opacity 0.2s";
+  //  }
+
+  //  function f2() {
+  //   if (item_2 && item_3 && item_1 && item_4) {
+  //     item_2.style.opacity = "1";
+  //     item_3.style.opacity = "1";
+  //     item_1.style.opacity = "1";
+  //     item_4.style.opacity = "1";
+  //   }
   // }
-
-  // function f2() {
-  //   item_2.style.opacity = "1";
-  //   item_3.style.opacity = "1";
-  //   item_1.style.opacity = "1";
-  //   item_4.style.opacity = "1";
-  // }
-
   // Второй элемент
 
-  // function f3() {
-  //   item_2.style.opacity = "0.5";
-  //   item_3.style.opacity = "0.5";
-  //   item_4.style.opacity = "0.5";
-  //   item_1.style.opacity = "1";
+  //  function f3() {
+  //   if (item_2 && item_3 && item_1 && item_4)
+  //    item_2.style.opacity = "0.5";
+  //    item_3.style.opacity = "0.5";
+  //    item_4.style.opacity = "0.5";
 
-  //   item_2.style.transition = "opacity 0.2s";
-  //   item_3.style.transition = "opacity 0.2s";
-  //   item_4.style.transition = "opacity 0.2s";
-  // }
+  //    item_2.style.transition = "opacity 0.2s";
+  //    item_3.style.transition = "opacity 0.2s";
+  //    item_4.style.transition = "opacity 0.2s";
+  //  }
 
-  // function f4() {
-  //   item_2.style.opacity = "1";
-  //   item_3.style.opacity = "1";
-  //   item_4.style.opacity = "1";
-  //   item_1.style.opacity = "1";
-  // }
+  //  function f4() {
+  //    item_2.style.opacity = "1";
+  //    item_3.style.opacity = "1";
+  //    item_4.style.opacity = "1";
+  //  }
 
   // Третий элемент
 
-  // function f5() {
-  //   item_2.style.opacity = "0.5";
-  //   item_1.style.opacity = "0.5";
-  //   item_4.style.opacity = "0.5";
-  //   item_3.style.opacity = "1";
+  //  function f5() {
+  //    item_2.style.opacity = "0.5";
+  //    item_1.style.opacity = "0.5";
+  //    item_4.style.opacity = "0.5";
 
-  //   item_2.style.transition = "opacity 0.2s";
-  //   item_1.style.transition = "opacity 0.2s";
-  //   item_4.style.transition = "opacity 0.2s";
-  // }
+  //    item_2.style.transition = "opacity 0.2s";
+  //    item_1.style.transition = "opacity 0.2s";
+  //    item_4.style.transition = "opacity 0.2s";
+  //  }
 
-  // function f6() {
-  //   item_2.style.opacity = "1";
-  //   item_1.style.opacity = "1";
-  //   item_4.style.opacity = "1";
-  //   item_3.style.opacity = "1";
-  // }
+  //  function f6() {
+  //    item_2.style.opacity = "1";
+  //    item_1.style.opacity = "1";
+  //    item_4.style.opacity = "1";
+  //  }
 
   // Четвертый элемент
 
-  // function f7() {
-  //   item_3.style.opacity = "0.5";
-  //   item_1.style.opacity = "0.5";
-  //   item_4.style.opacity = "0.5";
-  //   item_2.style.opacity = "1";
+  //  function f7() {
+  //    item_3.style.opacity = "0.5";
+  //    item_1.style.opacity = "0.5";
+  //    item_4.style.opacity = "0.5";
 
-  //   item_3.style.transition = "opacity 0.2s";
-  //   item_1.style.transition = "opacity 0.2s";
-  //   item_4.style.transition = "opacity 0.2s";
-  // }
+  //    item_3.style.transition = "opacity 0.2s";
+  //    item_1.style.transition = "opacity 0.2s";
+  //    item_4.style.transition = "opacity 0.2s";
+  //  }
 
-  // const f8 = () => {
-  //   item_3.style.opacity = "1";
-  //   item_1.style.opacity = "1";
-  //   item_4.style.opacity = "1";
-  //   item_2.style.opacity = "1";
-  // };
+  //  const f8 = () => {
+  //    item_3.style.opacity = "1";
+  //    item_1.style.opacity = "1";
+  //    item_4.style.opacity = "1";
+  //  };
 
   return (
     <div
