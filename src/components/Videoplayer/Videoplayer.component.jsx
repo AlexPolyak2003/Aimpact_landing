@@ -1,5 +1,5 @@
 import styles from "./Videoplayer.module.scss";
-import video from "../../../src/videos/PHONE.mp4";
+import video from "../../../src/videos/videofon.mp4";
 import VideoHeader from "../VideoHeader/VideoHeader.component";
 import SliderComponent from "../Slider/Slider.component";
 
