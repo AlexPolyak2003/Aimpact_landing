@@ -43,7 +43,7 @@ body {
         display: flex;
         flex-direction: row;
         margin-top: 5.5em;
-        gap: 2em;
+        gap: 10em;
 
         @media screen and (max-width: 1480px) {
           // gap: 1.5em;
@@ -63,7 +63,7 @@ body {
 
         .left_box {
           color: #3c415e;
-          font-size: 22px;
+          font-size: 30px;
 
           @media screen and (max-width: 1480px) {
             font-size: 20px;
@@ -86,7 +86,7 @@ body {
           }
 
           p {
-            width: 380px;
+            width: 500px;
 
             @media screen and (max-width: 1480px) {
               width: 340px;
@@ -112,7 +112,7 @@ body {
 
         .right_box {
           color: #3c415e;
-          font-size: 22px;
+          font-size: 30px;
 
           @media screen and (max-width: 1480px) {
             font-size: 20px;
@@ -133,7 +133,7 @@ body {
           }
 
           p {
-            width: 340px;
+            width: 500px;
 
             @media screen and (max-width: 1480px) {
               width: 300px;

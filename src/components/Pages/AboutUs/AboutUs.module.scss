@@ -12,12 +12,11 @@ body {
     display: flex;
     justify-content: center;
     // margin-top: 2em;
-
     .content {
       height: 100%;
       width: 100%;
       display: flex;
-      align-items: flex-start;
+      align-items: center;
       flex-direction: column;
       margin-top: 3.5em;
 
@@ -32,18 +31,17 @@ body {
         width: 100%;
         .text {
           display: flex;
-          justify-content: center;
+          // justify-content: center;
           align-items: flex-start;
           width: 95%;
-          gap: 16.5em;
-
+          gap: 55%;
           .title {
             width: 250px;
 
             h1 {
               font-weight: 500;
               color: #2d418d;
-              font-size: 65px;
+              font-size: 85px;
 
               @media screen and (max-width: 1200px) {
                 font-size: 55px;
@@ -70,7 +68,7 @@ body {
             margin-top: 2em;
             height: 60%;
             width: 1000px;
-            line-height: 33px;
+            line-height: 40px;
 
             @media screen and (max-width: 1200px) {
               line-height: 28px;
@@ -90,7 +88,7 @@ body {
             // }
 
             p {
-              font-size: 23px;
+              font-size: 30px;
 
               @media screen and (max-width: 1400px) {
                 font-size: 20px;
@@ -101,7 +99,7 @@ body {
               }
 
               .aimpact_first {
-                font-size: 25px;
+                font-size: 35px;
                 font-style: normal;
                 color: #2d418d;
 
@@ -119,7 +117,7 @@ body {
               }
 
               .aimpact_second {
-                font-size: 25px;
+                font-size: 35px;
                 font-style: normal;
                 color: #2d418d;
                 margin-left: 0.25em;

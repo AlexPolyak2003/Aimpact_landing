@@ -51,7 +51,11 @@ body {
                 align-items: center;
                 height: 65px;
                 gap: 0.5em;
-                font-size: 20px;
+                font-size: 30px;
+
+                img {
+                  transform: scale(1.5);
+                }
 
                 @media screen and (max-width: 776px) {
                   height: 35px;
@@ -67,7 +71,11 @@ body {
                 justify-content: center;
                 align-items: center;
                 gap: 0.5em;
-                font-size: 20px;
+                font-size: 30px;
+
+                img {
+                  transform: scale(1.5);
+                }
 
                 @media screen and (max-width: 776px) {
                   font-size: 18px;
@@ -83,7 +91,7 @@ body {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
-            font-size: 20px;
+            font-size: 30px;
 
             @media screen and (max-width: 776px) {
               font-size: 18px;
@@ -97,7 +105,7 @@ body {
               display: flex;
               align-items: center;
               img {
-                width: 200px;
+                width: 250px;
 
                 @media screen and (max-width: 776px) {
                   width: 175px;
