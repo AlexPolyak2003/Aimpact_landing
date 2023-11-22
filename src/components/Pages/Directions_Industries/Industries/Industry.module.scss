@@ -43,7 +43,11 @@ body {
         display: flex;
         flex-direction: row;
         margin-top: 5.5em;
-        gap: 10em;
+        gap: 3em;
+
+        @media screen and (max-width: 2700px) {
+          gap: 2em;
+        }
 
         @media screen and (max-width: 1480px) {
           // gap: 1.5em;
@@ -64,6 +68,10 @@ body {
         .left_box {
           color: #3c415e;
           font-size: 30px;
+
+          @media screen and (max-width: 2700px) {
+            font-size: 25px;
+          }
 
           @media screen and (max-width: 1480px) {
             font-size: 20px;
@@ -113,6 +121,10 @@ body {
         .right_box {
           color: #3c415e;
           font-size: 30px;
+
+          @media screen and (max-width: 2700px) {
+            font-size: 25px;
+          }
 
           @media screen and (max-width: 1480px) {
             font-size: 20px;

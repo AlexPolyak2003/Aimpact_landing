@@ -35,6 +35,9 @@ body {
             font-weight: 500;
             font-size: 85px;
 
+            @media screen and (max-width: 2700px) {
+              font-size: 75px;
+            }
             @media screen and (max-width: 1200px) {
               font-size: 55px;
             }
@@ -152,7 +155,8 @@ body {
             }
             h1 {
               position: absolute;
-              top: 5.95em;
+              top: 5.85em;
+              left: 2.5em;
               font-size: 35px;
               font-weight: 500;
 
