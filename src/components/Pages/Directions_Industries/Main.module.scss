@@ -154,6 +154,17 @@ body {
           @media screen and (max-width: 1600px) {
             width: 450px;
           }
+
+          @media screen and (max-width: 1000px) {
+            width: 350px;
+          }
+          @media screen and (max-width: 880px) {
+            width: 325px;
+          }
+
+          @media screen and (max-width: 800px) {
+            width: 300px;
+          }
         }
       }
     }

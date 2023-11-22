@@ -1,6 +1,6 @@
 @font-face {
   font-family: "EuclidSquare";
-  src: url("../../fonts/EuclidSquare-Regular.ttf");
+  src: url("../../../fonts/EuclidSquare-Regular.ttf");
 }
 
 .wrapper {
@@ -15,17 +15,8 @@
     justify-content: center;
     flex-direction: column;
     .slider {
-      //   width: 30%;
-      //   height: 50px;
-      //   border: 1px solid black;
       display: flex;
       flex-direction: column;
-
-      //   .id_3 {
-      //     p {
-      //       //   margin-top: 1em;
-      //     }
-      //   }
 
       .text {
         height: 100%;
@@ -89,9 +80,31 @@
             line-height: 24px;
           }
 
+          @media screen and (max-width: 850px) {
+            height: 95px;
+            font-size: 15px;
+            line-height: 22px;
+          }
+
           @media screen and (max-width: 776px) {
-            margin-left: 0em;
-            font-size: 16px;
+            // font-size: 14px;
+            // line-height: 15px;
+            display: none;
+          }
+
+          @media screen and (max-width: 630px) {
+            font-size: 13px;
+            line-height: 14px;
+          }
+
+          @media screen and (max-width: 530px) {
+            font-size: 12px;
+            line-height: 13px;
+          }
+
+          @media screen and (max-width: 480px) {
+            font-size: 12px;
+            line-height: 11.5px;
           }
         }
       }

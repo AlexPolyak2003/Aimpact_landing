@@ -1,7 +1,8 @@
 import styles from "./Videoplayer.module.scss";
 import video from "../../../src/videos/videofon.mp4";
 import VideoHeader from "../VideoHeader/VideoHeader.component";
-import SliderComponent from "../Slider/Slider.component";
+import SliderComponent from "../Slider/Slider_desktop/Slider.component";
+import SliderMobile from "../Slider/Slider_mobile/Slider_mobile.component";
 
 const Videoplayer = () => {
   return (
@@ -18,6 +19,10 @@ const Videoplayer = () => {
 
           <div className={styles.slider_position}>
             <SliderComponent />
+          </div>
+
+          <div className={styles.slider_mobile}>
+            <SliderMobile />
           </div>
         </div>
 

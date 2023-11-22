@@ -1,4 +1,4 @@
-import styles from "./Slider.module.scss";
+import styles from "./Slider_mobile.module.scss";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -50,7 +50,7 @@ const data = [
   },
 ];
 
-const SliderComponent = () => {
+const SliderMobile = () => {
   const settings = {
     dots: false,
     infinite: true,
@@ -61,16 +61,17 @@ const SliderComponent = () => {
     vertical: true,
     centerPadding: "5em",
     arrows: false,
+    // responsiveMode: true,
   };
 
   return (
     <div className={styles.wrapper}>
       <div className={styles.content}>
-        <div className={styles.slider}>
+        <div className={styles.slider_mobile}>
           <Slider
             style={{
               height: "200px",
-              width: "35vw",
+              width: "60vw",
               padding: "10px",
             }}
             {...settings}
@@ -87,4 +88,4 @@ const SliderComponent = () => {
   );
 };
 
-export default SliderComponent;
+export default SliderMobile;

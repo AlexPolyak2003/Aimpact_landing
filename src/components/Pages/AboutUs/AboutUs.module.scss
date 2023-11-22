@@ -43,6 +43,14 @@ body {
           @media screen and (max-width: 2300px) {
             gap: 40%;
           }
+
+          @media screen and (max-width: 1550px) {
+            gap: 30%;
+          }
+
+          @media screen and (max-width: 1300px) {
+            gap: 20%;
+          }
           .title {
             width: 250px;
 
@@ -58,6 +66,10 @@ body {
               @media screen and (max-width: 2000px) {
                 font-size: 65px;
               }
+
+              // @media screen and (max-width: 1550px) {
+              //   font-size: 58px;
+              // }
 
               @media screen and (max-width: 1200px) {
                 font-size: 55px;

@@ -93,14 +93,6 @@ body {
             @media screen and (max-width: 776px) {
               font-size: 1.7em;
             }
-
-            // @media screen and (max-width: 530px) {
-            //   font-size: 1.2em;
-            // }
-
-            // @media screen and (max-width: 420px) {
-            //   font-size: 1em;
-            // }
           }
         }
 
@@ -108,9 +100,8 @@ body {
           margin-top: 25em;
 
           @media screen and (max-width: 776px) {
-            position: fixed;
-            margin-bottom: 5em;
-            margin-right: 5em;
+            position: absolute;
+            top: 50em;
           }
         }
       }
@@ -129,6 +120,16 @@ body {
 
         @media screen and (max-width: 776px) {
           // height: 60vh;
+        }
+      }
+
+      .slider_mobile {
+        display: none;
+
+        @media screen and (max-width: 776px) {
+          position: absolute;
+          top: 70em;
+          display: block;
         }
       }
     }

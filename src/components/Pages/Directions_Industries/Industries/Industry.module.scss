@@ -27,8 +27,8 @@ body {
         gap: 2em;
       }
 
-      @media screen and (max-width: 950px) {
-        gap: 1.5em;
+      @media screen and (max-width: 1000px) {
+        gap: 1.2em;
       }
 
       @media screen and (max-width: 850px) {
@@ -54,7 +54,7 @@ body {
         }
 
         @media screen and (max-width: 1480px) {
-          // gap: 1.5em;
+          gap: 1.2em;
         }
 
         @media screen and (max-width: 1320px) {
