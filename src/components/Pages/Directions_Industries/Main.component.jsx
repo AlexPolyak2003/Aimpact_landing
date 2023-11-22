@@ -98,6 +98,36 @@ const Main = () => {
 
         {secondState ? <ChangedContent /> : <InitialContent />}
       </div>
+
+      {/* mobile */}
+
+      <div className={styles.content_mobile}>
+        <div className={styles.left_box}>
+          <div className={styles.titles}>
+            <h1
+              style={{ color: color[1] }}
+              id="btn_1"
+              ref={button_1}
+              onClick={handleClick}
+              className={styles.title_1}
+            >
+              направления
+            </h1>
+
+            <h1
+              style={{ color: color[0] }}
+              id="btn_2"
+              ref={button_2}
+              onClick={handleClick_2}
+              className={styles.title_2}
+            >
+              индустрии
+            </h1>
+          </div>
+        </div>
+
+        {secondState ? <ChangedContent /> : <InitialContent />}
+      </div>
     </div>
   );
 };

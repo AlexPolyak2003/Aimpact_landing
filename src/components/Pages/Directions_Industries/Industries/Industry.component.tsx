@@ -42,15 +42,6 @@ const Industry = () => {
       </div>
 
       <div className={styles.content_mobile}>
-        <div className={styles.left_block}>
-          <div className={styles.titles}>
-            <h1 className={styles.title_1}>направления</h1>
-            <h1 className={styles.title_2}>индустрии</h1>
-          </div>
-          <div className={styles.mozg_position}>
-            <img src={mozg} alt="" />
-          </div>
-        </div>
         <div className={styles.right_block}>
           <div className={styles.left_box}>
             <p>Финансы и банковское дело</p>

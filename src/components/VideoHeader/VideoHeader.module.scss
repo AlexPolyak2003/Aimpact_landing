@@ -91,6 +91,7 @@ body {
 
       @media screen and (max-width: 776px) {
         gap: 24em;
+        height: 5em;
       }
 
       @media screen and (max-width: 740px) {
@@ -130,7 +131,7 @@ body {
       }
       .logo {
         cursor: pointer;
-        margin-top: 0.5em;
+        // margin-top: 0.5em;
         img {
           width: 315px;
 
