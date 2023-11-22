@@ -46,13 +46,17 @@ body {
         margin-top: 6em;
         gap: 3em;
 
-        @media screen and (max-width: 1400px) {
-          gap: 2em;
+        @media screen and (max-width: 1600px) {
+          gap: 1em;
         }
 
-        @media screen and (max-width: 1000px) {
-          gap: 1.5em;
-        }
+        // @media screen and (max-width: 1400px) {
+        //   gap: 2em;
+        // }
+
+        // @media screen and (max-width: 1000px) {
+        //   gap: 1.5em;
+        // }
 
         .points {
           display: flex;
@@ -66,6 +70,10 @@ body {
 
             @media screen and (max-width: 2400px) {
               font-size: 25px;
+            }
+
+            @media screen and (max-width: 1600px) {
+              font-size: 22px;
             }
 
             @media screen and (max-width: 1400px) {
@@ -98,6 +106,10 @@ body {
             line-height: 35px;
           }
 
+          @media screen and (max-width: 1600px) {
+            line-height: 28px;
+          }
+
           @media screen and (max-width: 1070px) {
             line-height: 25px;
           }
@@ -111,6 +123,10 @@ body {
 
             @media screen and (max-width: 2400px) {
               font-size: 25px;
+            }
+
+            @media screen and (max-width: 1600px) {
+              font-size: 22px;
             }
             @media screen and (max-width: 1400px) {
               font-size: 20px;

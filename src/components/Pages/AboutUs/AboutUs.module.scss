@@ -11,14 +11,14 @@ body {
     height: 100%;
     display: flex;
     justify-content: center;
-    // margin-top: 2em;
+
     .content {
       height: 100%;
       width: 100%;
       display: flex;
       align-items: center;
       flex-direction: column;
-      margin-top: 3.5em;
+      margin-top: 6.5em;
 
       @media screen and (max-width: 776px) {
         display: none;
@@ -39,6 +39,10 @@ body {
           @media screen and (max-width: 2700px) {
             gap: 50%;
           }
+
+          @media screen and (max-width: 2300px) {
+            gap: 40%;
+          }
           .title {
             width: 250px;
 
@@ -50,6 +54,11 @@ body {
               @media screen and (max-width: 2700px) {
                 font-size: 75px;
               }
+
+              @media screen and (max-width: 2000px) {
+                font-size: 65px;
+              }
+
               @media screen and (max-width: 1200px) {
                 font-size: 55px;
               }
@@ -72,7 +81,7 @@ body {
           }
 
           .main {
-            margin-top: 2em;
+            margin-top: 2.5em;
             height: 60%;
             width: 1000px;
             line-height: 40px;
@@ -99,6 +108,10 @@ body {
 
               @media screen and (max-width: 2700px) {
                 font-size: 25px;
+              }
+
+              @media screen and (max-width: 2000px) {
+                font-size: 23px;
               }
 
               @media screen and (max-width: 1400px) {

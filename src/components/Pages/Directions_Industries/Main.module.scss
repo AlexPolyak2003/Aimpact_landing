@@ -11,8 +11,6 @@ body {
     display: flex;
     justify-content: center;
 
-    // margin-top: 10em;
-
     .content {
       height: 100%;
       width: 95%;
@@ -20,6 +18,7 @@ body {
       justify-content: flex-start;
       flex-direction: row;
       gap: 40%;
+      margin-top: 4em;
 
       @media screen and (max-width: 2700px) {
         gap: 25%;
@@ -27,6 +26,14 @@ body {
 
       @media screen and (max-width: 2400px) {
         gap: 20%;
+      }
+
+      @media screen and (max-width: 2250px) {
+        gap: 15%;
+      }
+
+      @media screen and (max-width: 1600px) {
+        gap: 8%;
       }
 
       @media screen and (max-width: 1480px) {
@@ -72,6 +79,10 @@ body {
             @media screen and (max-width: 2700px) {
               font-size: 75px;
             }
+
+            @media screen and (max-width: 2000px) {
+              font-size: 65px;
+            }
             @media screen and (max-width: 1200px) {
               font-size: 55px;
             }
@@ -106,6 +117,10 @@ body {
             @media screen and (max-width: 2700px) {
               font-size: 75px;
             }
+
+            @media screen and (max-width: 2000px) {
+              font-size: 65px;
+            }
             @media screen and (max-width: 1200px) {
               font-size: 55px;
             }
@@ -131,6 +146,14 @@ body {
       .mozg_position {
         img {
           width: 800px;
+
+          @media screen and (max-width: 2000px) {
+            width: 500px;
+          }
+
+          @media screen and (max-width: 1600px) {
+            width: 450px;
+          }
         }
       }
     }

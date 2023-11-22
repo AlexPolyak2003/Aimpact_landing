@@ -55,6 +55,15 @@ body {
 
                 img {
                   transform: scale(1.5);
+
+                  @media screen and (max-width: 2000px) {
+                    transform: scale(1);
+                  }
+                }
+
+                @media screen and (max-width: 2000px) {
+                  height: 55px;
+                  font-size: 25px;
                 }
 
                 @media screen and (max-width: 776px) {
@@ -75,6 +84,15 @@ body {
 
                 img {
                   transform: scale(1.5);
+
+                  @media screen and (max-width: 2000px) {
+                    transform: scale(1);
+                  }
+                }
+
+                @media screen and (max-width: 2000px) {
+                  height: 55px;
+                  font-size: 25px;
                 }
 
                 @media screen and (max-width: 776px) {
@@ -93,6 +111,10 @@ body {
             justify-content: space-between;
             font-size: 30px;
 
+            @media screen and (max-width: 2000px) {
+              font-size: 25px;
+            }
+
             @media screen and (max-width: 776px) {
               font-size: 18px;
             }
@@ -106,6 +128,10 @@ body {
               align-items: center;
               img {
                 width: 250px;
+
+                @media screen and (max-width: 2000px) {
+                  width: 225px;
+                }
 
                 @media screen and (max-width: 776px) {
                   width: 175px;

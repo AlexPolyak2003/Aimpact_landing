@@ -26,7 +26,7 @@ body {
       color: #fff;
       animation-name: fade;
       animation-duration: 1s;
-      height: 8em;
+      height: 7em;
       gap: 72em;
 
       @media screen and (max-width: 3700px) {
@@ -46,39 +46,47 @@ body {
       }
 
       @media screen and (max-width: 2400px) {
-        gap: 28em;
+        gap: 38em;
       }
 
-      @media screen and (max-width: 2000px) {
-        gap: 22em;
+      @media screen and (max-width: 2180px) {
+        gap: 33em;
+      }
+
+      @media screen and (max-width: 1950px) {
+        gap: 29em;
       }
 
       @media screen and (max-width: 1800px) {
-        gap: 17em;
+        gap: 24em;
       }
 
       @media screen and (max-width: 1650px) {
-        gap: 14em;
+        gap: 19em;
       }
 
       @media screen and (max-width: 1500px) {
-        gap: 10em;
+        gap: 16em;
       }
 
       @media screen and (max-width: 1370px) {
-        gap: 8em;
+        gap: 12em;
       }
 
       @media screen and (max-width: 1250px) {
-        gap: 6em;
+        gap: 10em;
+      }
+
+      @media screen and (max-width: 1180px) {
+        gap: 8em;
       }
 
       @media screen and (max-width: 1100px) {
-        gap: 4em;
+        gap: 7.5em;
       }
 
-      @media screen and (max-width: 980px) {
-        gap: 2em;
+      @media screen and (max-width: 990px) {
+        gap: 4.8em;
       }
 
       @media screen and (max-width: 776px) {
@@ -122,11 +130,16 @@ body {
       }
       .logo {
         cursor: pointer;
+        margin-top: 0.5em;
         img {
           width: 315px;
 
           @media screen and (max-width: 2400px) {
             width: 250px;
+          }
+
+          @media screen and (max-width: 2000px) {
+            width: 225px;
           }
 
           @media screen and (max-width: 1100px) {
@@ -135,6 +148,10 @@ body {
 
           @media screen and (max-width: 830px) {
             width: 160px;
+          }
+
+          @media screen and (max-width: 776px) {
+            margin-top: 0.5em;
           }
           @media screen and (max-width: 420px) {
             width: 140px;
@@ -150,11 +167,19 @@ body {
         color: #fff;
         transition: 0.5s;
 
-        @media screen and (max-width: 1370px) {
+        @media screen and (max-width: 1950px) {
+          gap: 1.25em;
+        }
+
+        @media screen and (max-width: 1500px) {
           gap: 1em;
         }
 
-        @media screen and (max-width: 1200px) {
+        // @media screen and (max-width: 1370px) {
+        //   gap: 1em;
+        // }
+
+        @media screen and (max-width: 1180px) {
           gap: 0.75em;
         }
 
@@ -181,6 +206,11 @@ body {
             width: 70px;
           }
 
+          @media screen and (max-width: 2000px) {
+            font-size: 18px;
+            width: 50px;
+          }
+
           @media screen and (max-width: 1100px) {
             font-size: 18px;
             width: 50px;
@@ -188,6 +218,7 @@ body {
 
           @media screen and (max-width: 930px) {
             font-size: 14px;
+            width: 40px;
           }
 
           &:hover.item_long {
@@ -207,12 +238,18 @@ body {
             width: 210px;
           }
 
+          @media screen and (max-width: 2000px) {
+            font-size: 18px;
+            width: 185px;
+          }
+
           @media screen and (max-width: 1100px) {
             font-size: 18px;
             width: 185px;
           }
           @media screen and (max-width: 930px) {
             font-size: 14px;
+            width: 155px;
           }
         }
 
@@ -228,12 +265,18 @@ body {
             width: 100px;
           }
 
+          @media screen and (max-width: 2000px) {
+            font-size: 18px;
+            width: 80px;
+          }
+
           @media screen and (max-width: 1100px) {
             font-size: 18px;
             width: 80px;
           }
           @media screen and (max-width: 930px) {
             font-size: 14px;
+            width: 70px;
           }
         }
       }
