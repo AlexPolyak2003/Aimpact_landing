@@ -26,7 +26,7 @@ const Videoplayer = () => {
           </div>
         </div>
 
-        <video loop autoPlay muted playsinline>
+        <video loop autoPlay muted playsInline>
           <source src={video} type="video/mp4" />
         </video>
       </div>
