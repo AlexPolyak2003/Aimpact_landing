@@ -1,5 +1,6 @@
 import styles from "./Videoplayer.module.scss";
 import video from "../../../src/videos/videofon.mp4";
+import video_mobile from "../../../src/videos/PHONE.mp4";
 import VideoHeader from "../VideoHeader/VideoHeader.component";
 import SliderComponent from "../Slider/Slider_desktop/Slider.component";
 import SliderMobile from "../Slider/Slider_mobile/Slider_mobile.component";
@@ -26,14 +27,10 @@ const Videoplayer = () => {
           </div>
         </div>
 
-        <video
-          loop
-          autoPlay
-          muted
-          playsinline
-          src={video}
-          type="video/mp4"
-        ></video>
+        <video loop autoPlay muted playsinline>
+          <source src={video} type="video/mp4" />
+          <source src={video_mobile} type="video/mp4" />
+        </video>
       </div>
     </div>
   );
