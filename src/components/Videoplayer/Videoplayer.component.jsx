@@ -1,9 +1,10 @@
 import styles from "./Videoplayer.module.scss";
 import video from "../../../src/videos/videofon.mp4";
-import video_mobile from "../../../src/videos/PHONE.mp4";
+import video_mobile from "../../../src/videos/avi.avi";
 import VideoHeader from "../VideoHeader/VideoHeader.component";
 import SliderComponent from "../Slider/Slider_desktop/Slider.component";
 import SliderMobile from "../Slider/Slider_mobile/Slider_mobile.component";
+import { on } from "events";
 
 const Videoplayer = () => {
   return (
@@ -29,7 +30,7 @@ const Videoplayer = () => {
 
         <video loop autoPlay muted playsinline>
           <source src={video} type="video/mp4" />
-          <source src={video_mobile} type="video/mp4" />
+          <source src={video_mobile} type="video/avi" />
         </video>
       </div>
     </div>
