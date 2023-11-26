@@ -4,10 +4,11 @@ import AboutUs from "../Pages/AboutUs/AboutUs.component";
 import Project from "../Pages/Projects/Project.component";
 import ActualProject from "../Pages/ActualProjects/ActualProject.component";
 import Footer from "../Footer/Footer.component";
+import { lazy } from "react";
 // import Videoplayer from "../Videoplayer/Videoplayer.component";
 import Main from "../Pages/Directions_Industries/Main.component";
 
-const MyLazyComponent = React.lazy(() =>
+const MyLazyComponent = lazy(() =>
   import("../Videoplayer/Videoplayer.component")
 );
 

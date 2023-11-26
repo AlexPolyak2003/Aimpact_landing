@@ -6,6 +6,9 @@ import MainPage from "./components/MainPage/MainPage.component";
 import { Suspense, lazy } from "react";
 
 const App = () => {
+  const Lazy = lazy(
+    () => import("../src/components/MainPage/MainPage.component")
+  );
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
@@ -22,7 +25,9 @@ const App = () => {
           <LoadingPage />
         ) : (
           <div className={styles.content}>
-            <MainPage />
+            <Suspense>
+              <Lazy />
+            </Suspense>
           </div>
         )}
       </Suspense>
