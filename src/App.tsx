@@ -6,9 +6,9 @@ import MainPage from "./components/MainPage/MainPage.component";
 import { Suspense, lazy } from "react";
 
 const App = () => {
-  const Lazy = lazy(
-    () => import("../src/components/MainPage/MainPage.component")
-  );
+  // const Lazy = lazy(
+  //   () => import("../src/components/MainPage/MainPage.component")
+  // );
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
@@ -20,14 +20,14 @@ const App = () => {
   return (
     <div className={styles.wrapper}>
       <Suspense>
-        {/* <MyLazyComponent /> */}
         {loading ? (
           <LoadingPage />
         ) : (
           <div className={styles.content}>
-            <Suspense>
-              <Lazy />
-            </Suspense>
+            {/* <Suspense> */}
+            {/* <Lazy /> */}
+            {/* </Suspense> */}
+            <MainPage />
           </div>
         )}
       </Suspense>

@@ -201,6 +201,11 @@ body {
           font-size: 30px;
           color: #fff;
           cursor: pointer;
+          transition: 0.2s ease-in-out;
+
+          &:hover {
+            transform: scale(1.1);
+          }
 
           @media screen and (max-width: 2400px) {
             font-size: 20px;
@@ -234,6 +239,11 @@ body {
           justify-content: center;
           color: #fff;
           cursor: pointer;
+          transition: 0.2s ease-in-out;
+
+          &:hover {
+            transform: scale(1.1);
+          }
           @media screen and (max-width: 2400px) {
             font-size: 20px;
             width: 210px;
@@ -261,6 +271,11 @@ body {
           justify-content: center;
           color: #fff;
           cursor: pointer;
+          transition: 0.2s ease-in-out;
+
+          &:hover {
+            transform: scale(1.1);
+          }
           @media screen and (max-width: 2400px) {
             font-size: 20px;
             width: 100px;

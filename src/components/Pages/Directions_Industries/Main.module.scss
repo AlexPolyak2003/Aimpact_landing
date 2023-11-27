@@ -65,6 +65,8 @@ body {
           line-height: 30px;
 
           .title_1 {
+            position: relative;
+            text-decoration: none;
             color: #2d418d;
             font-weight: 500;
             font-size: 85px;
@@ -75,6 +77,23 @@ body {
             -ms-user-select: none;
             user-select: none;
             cursor: pointer;
+
+            &:after {
+              content: "";
+              position: absolute;
+              left: 0;
+              bottom: -15px; /* Расстояние от текста до линии подчеркивания */
+              width: 0;
+              height: 5px; /* Толщина линии подчеркивания */
+              background-color: #2d418d; /* Цвет линии подчеркивания */
+              transition: width 0.3s ease; /* Плавное изменение ширины */
+            }
+
+            &:hover {
+              &:after {
+                width: 94.5%; // Изменение ширины подчеркивания при hover
+              }
+            }
 
             @media screen and (max-width: 2700px) {
               font-size: 75px;
@@ -104,6 +123,8 @@ body {
           }
 
           .title_2 {
+            position: relative;
+            text-decoration: none;
             color: #b0bde6;
             font-weight: 500;
             font-size: 85px;
@@ -114,6 +135,24 @@ body {
             -moz-user-select: none;
             -ms-user-select: none;
             user-select: none;
+
+            &:after {
+              content: "";
+              position: absolute;
+              left: 0;
+              bottom: -15px; /* Расстояние от текста до линии подчеркивания */
+              width: 0;
+              height: 5px; /* Толщина линии подчеркивания */
+              background-color: #b0bde6; /* Цвет линии подчеркивания */
+              transition: width 0.3s ease; /* Плавное изменение ширины */
+            }
+
+            &:hover {
+              &:after {
+                width: 75%; // Изменение ширины подчеркивания при hover
+              }
+            }
+
             @media screen and (max-width: 2700px) {
               font-size: 75px;
             }
