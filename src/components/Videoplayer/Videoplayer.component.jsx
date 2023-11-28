@@ -34,7 +34,7 @@ const Videoplayer = () => {
           muted
           playsInline
           async
-          preload="auto"
+          preload={"auto"}
         >
           <source src={video} type="video/mp4" />
         </video>
