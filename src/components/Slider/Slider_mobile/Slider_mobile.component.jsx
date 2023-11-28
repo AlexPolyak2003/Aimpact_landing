@@ -71,7 +71,7 @@ const SliderMobile = () => {
           <Slider
             style={{
               height: "200px",
-              width: "80vw",
+              width: "100vw",
               padding: "10px",
             }}
             {...settings}
