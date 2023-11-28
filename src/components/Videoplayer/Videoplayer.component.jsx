@@ -1,3 +1,4 @@
+import React, { useState, useEffect } from "react";
 import styles from "./Videoplayer.module.scss";
 import video from "../../../src/videos/video_var.mp4";
 import VideoHeader from "../VideoHeader/VideoHeader.component";
@@ -26,7 +27,7 @@ const Videoplayer = () => {
           </div>
         </div>
 
-        <video autoPlay loop muted playsInline preload="auto">
+        <video id="videoPlayer" autoPlay loop muted playsInline preload="auto">
           <source src={video} type="video/mp4" />
         </video>
       </div>

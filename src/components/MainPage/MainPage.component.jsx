@@ -17,7 +17,7 @@ const MainPage = () => {
     <div className={styles.wrapper}>
       <Suspense>
         <div className={styles.content}>
-          <MyLazyComponent />
+          <MyLazyComponent async controls />
 
           {/* <Videoplayer /> */}
           <AboutUs />
