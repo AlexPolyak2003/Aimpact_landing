@@ -4,6 +4,7 @@ import video from "../../../src/videos/video_var.mp4";
 import VideoHeader from "../VideoHeader/VideoHeader.component";
 import SliderComponent from "../Slider/Slider_desktop/Slider.component";
 import SliderMobile from "../Slider/Slider_mobile/Slider_mobile.component";
+import LazyLoad from "react-lazyload";
 
 const Videoplayer = () => {
   return (
@@ -30,7 +31,6 @@ const Videoplayer = () => {
         <video
           id="videoPlayer"
           async
-          controls
           autoPlay
           loop
           muted
