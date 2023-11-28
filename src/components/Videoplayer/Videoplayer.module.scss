@@ -97,7 +97,7 @@ body {
         }
 
         .slider_position {
-          margin-top: 25em;
+          margin-top: 45%;
 
           @media screen and (max-width: 776px) {
             position: absolute;
@@ -115,10 +115,6 @@ body {
         animation-duration: 0.5s;
 
         @media screen and (max-width: 1200px) {
-          height: 70vh;
-        }
-
-        @media screen and (max-width: 776px) {
           height: 100vh;
         }
       }
