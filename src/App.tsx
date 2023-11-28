@@ -15,7 +15,7 @@ const App = () => {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 8000);
+    }, 6000);
   }, []);
   return (
     <div className={styles.wrapper}>

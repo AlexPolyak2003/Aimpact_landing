@@ -8,18 +8,18 @@ import { lazy, Suspense } from "react";
 import Videoplayer from "../Videoplayer/Videoplayer.component";
 import Main from "../Pages/Directions_Industries/Main.component";
 
-// const MyLazyComponent = lazy(() =>
-//   import("../Videoplayer/Videoplayer.component")
-// );
+const MyLazyComponent = lazy(() =>
+  import("../Videoplayer/Videoplayer.component")
+);
 
 const MainPage = () => {
   return (
     <div className={styles.wrapper}>
       <Suspense>
         <div className={styles.content}>
-          {/* <MyLazyComponent />
-           */}
-          <Videoplayer />
+          <MyLazyComponent />
+
+          {/* <Videoplayer /> */}
           <AboutUs />
           <Main />
           <Project />
