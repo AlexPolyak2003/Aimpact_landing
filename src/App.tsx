@@ -19,18 +19,16 @@ const App = () => {
   }, []);
   return (
     <div className={styles.wrapper}>
-      <Suspense>
-        {loading ? (
-          <LoadingPage />
-        ) : (
-          <div className={styles.content}>
-            {/* <Suspense> */}
-            {/* <Lazy /> */}
-            {/* </Suspense> */}
-            <MainPage />
-          </div>
-        )}
-      </Suspense>
+      {loading ? (
+        <LoadingPage />
+      ) : (
+        <div className={styles.content}>
+          {/* <Suspense> */}
+          {/* <Lazy /> */}
+          {/* </Suspense> */}
+          <MainPage />
+        </div>
+      )}
     </div>
   );
 };

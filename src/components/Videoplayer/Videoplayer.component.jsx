@@ -29,18 +29,19 @@ const Videoplayer = () => {
             <SliderMobile />
           </div>
         </div>
-
-        <video
-          id="videoPlayer"
-          autoPlay
-          loop
-          muted
-          playsInline
-          async
-          preload={"auto"}
-        >
-          <source src={video} type="video/mp4" />
-        </video>
+        <Suspense fallback={<div>Loading...</div>}>
+          <video
+            id="videoPlayer"
+            autoPlay
+            loop
+            muted
+            playsInline
+            async
+            preload={"auto"}
+          >
+            <source src={video} type="video/mp4" />
+          </video>
+        </Suspense>
       </div>
     </div>
   );
