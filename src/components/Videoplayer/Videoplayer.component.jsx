@@ -1,9 +1,8 @@
 import styles from "./Videoplayer.module.scss";
-import video from "../../../src/videos/videofon.mp4";
+import video from "../../../src/videos/video_var.mp4";
 import VideoHeader from "../VideoHeader/VideoHeader.component";
 import SliderComponent from "../Slider/Slider_desktop/Slider.component";
 import SliderMobile from "../Slider/Slider_mobile/Slider_mobile.component";
-import { AdvancedVideo, cld } from "@cloudinary/react";
 
 const Videoplayer = () => {
   return (
