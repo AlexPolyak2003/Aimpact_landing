@@ -6,6 +6,11 @@ import SliderComponent from "../Slider/Slider_desktop/Slider.component";
 import SliderMobile from "../Slider/Slider_mobile/Slider_mobile.component";
 
 const Videoplayer = () => {
+  const [isLoading, setIsLoading] = useState(true);
+
+  const handleLoadedData = () => {
+    setIsLoading(false);
+  };
   return (
     <div id="logo" className={styles.wrapper}>
       <div className={styles.content}>
@@ -27,7 +32,15 @@ const Videoplayer = () => {
           </div>
         </div>
 
-        <video id="videoPlayer" autoPlay loop muted playsInline preload="auto">
+        <video
+          id="videoPlayer"
+          autoPlay
+          loop
+          muted
+          playsInline
+          preload="auto"
+          onLoadedData={handleLoadedData}
+        >
           <source src={video} type="video/mp4" />
         </video>
       </div>
