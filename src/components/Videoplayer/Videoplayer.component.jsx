@@ -4,8 +4,11 @@ import video from "../../../src/videos/video_var.mp4";
 import VideoHeader from "../VideoHeader/VideoHeader.component";
 import SliderComponent from "../Slider/Slider_desktop/Slider.component";
 import SliderMobile from "../Slider/Slider_mobile/Slider_mobile.component";
+import { preloadVideo } from "@remotion/preload";
 
 const Videoplayer = () => {
+  const unpreload = preloadVideo(document.getElementById("videoPlayer"));
+  unpreload();
   return (
     <div id="logo" className={styles.wrapper}>
       <div className={styles.content}>
