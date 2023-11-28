@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, Suspense } from "react";
 import styles from "./Videoplayer.module.scss";
 import video from "../../../src/videos/video_var.mp4";
 import VideoHeader from "../VideoHeader/VideoHeader.component";
@@ -6,11 +6,6 @@ import SliderComponent from "../Slider/Slider_desktop/Slider.component";
 import SliderMobile from "../Slider/Slider_mobile/Slider_mobile.component";
 
 const Videoplayer = () => {
-  const [isLoading, setIsLoading] = useState(true);
-
-  const handleLoadedData = () => {
-    setIsLoading(false);
-  };
   return (
     <div id="logo" className={styles.wrapper}>
       <div className={styles.content}>
@@ -34,12 +29,13 @@ const Videoplayer = () => {
 
         <video
           id="videoPlayer"
+          async
+          controls
           autoPlay
           loop
           muted
           playsInline
           preload="auto"
-          onLoadedData={handleLoadedData}
         >
           <source src={video} type="video/mp4" />
         </video>
