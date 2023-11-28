@@ -9,26 +9,26 @@ const App = () => {
   // const Lazy = lazy(
   //   () => import("../src/components/MainPage/MainPage.component")
   // );
-  const [loading, setLoading] = useState(false);
+  // const [loading, setLoading] = useState(false);
 
-  useEffect(() => {
-    setLoading(true);
-    setTimeout(() => {
-      setLoading(false);
-    }, 5000);
-  }, []);
+  // useEffect(() => {
+  //   setLoading(true);
+  //   setTimeout(() => {
+  //     setLoading(false);
+  //   }, 3000);
+  // }, []);
   return (
     <div className={styles.wrapper}>
-      {loading ? (
-        <LoadingPage />
-      ) : (
-        <div className={styles.content}>
-          {/* <Suspense> */}
-          {/* <Lazy /> */}
-          {/* </Suspense> */}
-          <MainPage />
-        </div>
-      )}
+      {/* {loading ? ( */}
+      {/* <LoadingPage /> */}
+      {/* ) : ( */}
+      <div className={styles.content}>
+        {/* <Suspense> */}
+        {/* <Lazy /> */}
+        {/* </Suspense> */}
+        <MainPage />
+      </div>
+      {/* )} */}
     </div>
   );
 };
