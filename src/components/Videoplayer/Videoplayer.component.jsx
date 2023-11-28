@@ -8,7 +8,7 @@ import { preloadVideo } from "@remotion/preload";
 
 const Videoplayer = () => {
   const unpreload = preloadVideo(document.getElementById("videoPlayer"));
-  unpreload();
+  // unpreload();
   return (
     <div id="logo" className={styles.wrapper}>
       <div className={styles.content}>
@@ -29,7 +29,7 @@ const Videoplayer = () => {
             <SliderMobile />
           </div>
         </div>
-        <Suspense fallback={<div>Loading...</div>}>
+        <Suspense>
           <video
             id="videoPlayer"
             autoPlay
@@ -37,7 +37,8 @@ const Videoplayer = () => {
             muted
             playsInline
             async
-            preload={"auto"}
+            preload="auto"
+            onLoadedData={unpreload}
           >
             <source src={video} type="video/mp4" />
           </video>
