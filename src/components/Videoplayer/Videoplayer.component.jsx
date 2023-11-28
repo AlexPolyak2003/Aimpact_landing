@@ -28,7 +28,7 @@ const Videoplayer = () => {
           </div>
         </div>
 
-        <LazyLoad offset={100}>
+        <LazyLoad offset={100} once>
           <video
             id="videoPlayer"
             autoPlay
