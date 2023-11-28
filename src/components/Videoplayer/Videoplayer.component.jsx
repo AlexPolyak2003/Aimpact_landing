@@ -4,7 +4,6 @@ import video from "../../../src/videos/video_var.mp4";
 import VideoHeader from "../VideoHeader/VideoHeader.component";
 import SliderComponent from "../Slider/Slider_desktop/Slider.component";
 import SliderMobile from "../Slider/Slider_mobile/Slider_mobile.component";
-import LazyLoad from "react-lazy-load";
 
 const Videoplayer = () => {
   return (
@@ -28,18 +27,17 @@ const Videoplayer = () => {
           </div>
         </div>
 
-        <LazyLoad offset={100} once>
-          <video
-            id="videoPlayer"
-            autoPlay
-            loop
-            muted
-            playsInline
-            preload="auto"
-          >
-            <source src={video} type="video/mp4" />
-          </video>
-        </LazyLoad>
+        <video
+          id="videoPlayer"
+          autoPlay
+          loop
+          muted
+          playsInline
+          async
+          preload="auto"
+        >
+          <source src={video} type="video/mp4" />
+        </video>
       </div>
     </div>
   );
