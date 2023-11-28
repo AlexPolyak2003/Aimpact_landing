@@ -7,7 +7,7 @@ import SliderMobile from "../Slider/Slider_mobile/Slider_mobile.component";
 import { preloadVideo } from "@remotion/preload";
 
 const Videoplayer = () => {
-  const unpreload = preloadVideo(document.getElementById("videoPlayer"));
+  // const unpreload = preloadVideo(document.getElementById("videoPlayer"));
   // unpreload();
   return (
     <div id="logo" className={styles.wrapper}>
@@ -38,7 +38,6 @@ const Videoplayer = () => {
             playsInline
             async
             preload="auto"
-            onLoadedData={unpreload}
           >
             <source src={video} type="video/mp4" />
           </video>
