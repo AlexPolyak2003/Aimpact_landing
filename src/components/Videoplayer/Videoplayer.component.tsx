@@ -5,7 +5,7 @@ import VideoHeader from "../VideoHeader/VideoHeader.component";
 import SliderComponent from "../Slider/Slider_desktop/Slider.component";
 import SliderMobile from "../Slider/Slider_mobile/Slider_mobile.component";
 
-const Videoplayer = () => {
+const VideoPlayer = () => {
   return (
     <div id="logo" className={styles.wrapper}>
       <div className={styles.content}>
@@ -27,21 +27,12 @@ const Videoplayer = () => {
           </div>
         </div>
 
-        <Suspense>
-          <video
-            id="videoPlayer"
-            autoPlay
-            loop
-            muted
-            playsInline
-            preload="auto"
-          >
-            <source src={video} type="video/mp4" />
-          </video>
-        </Suspense>
+        <video id="videoPlayer" autoPlay loop muted playsInline preload="auto">
+          <source src={video} type="video/mp4" />
+        </video>
       </div>
     </div>
   );
 };
 
-export default Videoplayer;
+export default VideoPlayer;
