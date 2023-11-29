@@ -25,3 +25,4 @@ declare module "*.mkv" {
 
 declare module "react-slick";
 declare module "jquery";
+declare module "css";

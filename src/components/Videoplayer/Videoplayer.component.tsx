@@ -34,7 +34,6 @@ const Videoplayer = () => {
             loop
             muted
             playsInline
-            async
             preload="auto"
           >
             <source src={video} type="video/mp4" />

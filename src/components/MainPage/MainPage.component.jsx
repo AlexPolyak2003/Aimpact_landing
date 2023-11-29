@@ -17,30 +17,29 @@ const MainPage = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // setLoading(true);
-    setTimeout(() => {
+    const timeout = setTimeout(() => {
       setLoading(false);
     }, 3000);
+
+    return () => clearTimeout(timeout);
   }, []);
 
   return (
     <div className={styles.wrapper}>
-      <Suspense>
-        {loading ? (
-          <LoadingPage />
-        ) : (
-          <div className={styles.content}>
-            <MyLazyComponent async />
+      {loading ? (
+        <LoadingPage />
+      ) : (
+        <div className={styles.content}>
+          <MyLazyComponent id="myVideo" async />
 
-            {/* <Videoplayer /> */}
-            <AboutUs />
-            <Main />
-            <Project />
-            <ActualProject />
-            <Footer />
-          </div>
-        )}
-      </Suspense>
+          {/* <Videoplayer /> */}
+          <AboutUs />
+          <Main />
+          <Project />
+          <ActualProject />
+          <Footer />
+        </div>
+      )}
     </div>
   );
 };

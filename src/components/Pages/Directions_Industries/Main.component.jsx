@@ -11,20 +11,10 @@ const Main = () => {
   const [firstState, setFirstState] = useState(true);
   const [secondState, setSecondState] = useState(false);
   const [isActive, setIsActive] = useState(false);
-  // const [colorLightBlue, setColorLightBlue] = useState("#b0bde6");
-  // const [colorBlue, setColorBlue] = useState("#2d418d");
 
   const [color, setColor] = useState(["#b0bde6", "#2d418d"]);
+  const [underline, setUnderline] = useState(["#2d418d", "#b0bde6"]);
 
-  // const changeColor = () => {
-  //   if (colorBlue) {
-  //     setColorLightBlue(colorLightBlue === "#2d418d" ? "#b0bde6" : "#2d418d");
-  //   }
-  // };
-
-  // const changeColor_2 = () => {
-  //   setColorBlue(colorBlue === "#b0bde6" ? "#2d418d" : "#b0bde6");
-  // };
   const toggleFirstContent = () => {
     setIsActive(true);
     setFirstState(true);
@@ -45,24 +35,20 @@ const Main = () => {
     return <Industry />;
   };
 
-  const handleClick = (event) => {
+  const handleClick = () => {
     if (!firstState) {
       setColor(["#b0bde6", "#2d418d"]);
+      setUnderline(["#b0bde6", "#2d418d"]);
       toggleFirstContent();
     }
-
-    // changeColor();
-    // button_2.current.style.color = colorLightBlue;
   };
 
-  const handleClick_2 = (event) => {
+  const handleClick_2 = () => {
     if (!secondState) {
       setColor(["#2d418d", "#b0bde6"]);
+      setUnderline(["#2d418d", "#b0bde6"]);
       toggleSecondContent();
     }
-
-    // changeColor_2();
-    // button_1.current.style.color = colorBlue;
   };
 
   return (
@@ -71,7 +57,7 @@ const Main = () => {
         <div className={styles.left_box}>
           <div className={styles.titles}>
             <h1
-              style={{ color: color[1] }}
+              style={{ color: color[1], borderBottomColor: underline[1] }}
               id="btn_1"
               ref={button_1}
               onClick={handleClick}
