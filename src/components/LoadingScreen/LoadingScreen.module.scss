@@ -11,6 +11,10 @@
     gap: 1em;
     justify-content: center;
     align-items: center;
+    // position: absolute;
+    // top: 0;
+    // left: 0;
+    // background-color: white; /* Прозрачный фон */
 
     @media screen and (max-width: 776px) {
       height: 100vh;

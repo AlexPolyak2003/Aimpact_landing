@@ -14,10 +14,10 @@ const MyLazyComponent = lazy(() =>
 );
 
 const MainPage = () => {
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    setLoading(true);
+    // setLoading(true);
     setTimeout(() => {
       setLoading(false);
     }, 3000);

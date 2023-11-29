@@ -6,11 +6,6 @@ import SliderComponent from "../Slider/Slider_desktop/Slider.component";
 import SliderMobile from "../Slider/Slider_mobile/Slider_mobile.component";
 
 const Videoplayer = () => {
-  const videoRef = useRef(null);
-
-  useEffect(() => {
-    videoRef.current.load();
-  }, []);
   return (
     <div id="logo" className={styles.wrapper}>
       <div className={styles.content}>
@@ -31,9 +26,9 @@ const Videoplayer = () => {
             <SliderMobile />
           </div>
         </div>
+
         <Suspense>
           <video
-            ref={videoRef}
             id="videoPlayer"
             autoPlay
             loop
