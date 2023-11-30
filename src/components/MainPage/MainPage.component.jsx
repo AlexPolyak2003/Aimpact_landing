@@ -30,8 +30,7 @@ const MainPage = () => {
       ) : (
         <div className={styles.content}>
           {/* <MyLazyComponent id="myVideo" async /> */}
-
-          <VideoPlayer async />
+          <VideoPlayer id="VideoPlayer" async />
           <AboutUs />
           <Main />
           <Project />

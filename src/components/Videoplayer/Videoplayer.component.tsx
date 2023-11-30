@@ -6,6 +6,12 @@ import SliderComponent from "../Slider/Slider_desktop/Slider.component";
 import SliderMobile from "../Slider/Slider_mobile/Slider_mobile.component";
 
 const VideoPlayer = () => {
+  // const video: any = document.getElementById("VideoPlayer");
+  const [loaded, setLoaded] = useState(false);
+
+  useEffect(() => {
+    const video = document.getElementById("VideoPlayer");
+  }, []);
   return (
     <div id="logo" className={styles.wrapper}>
       <div className={styles.content}>
@@ -27,7 +33,15 @@ const VideoPlayer = () => {
           </div>
         </div>
 
-        <video id="videoPlayer" autoPlay loop muted playsInline preload="auto">
+        <video
+          // ref={vidRef}
+          id="videoPlayer"
+          autoPlay
+          loop
+          muted
+          playsInline
+          preload="auto"
+        >
           <source src={video} type="video/mp4" />
         </video>
       </div>
