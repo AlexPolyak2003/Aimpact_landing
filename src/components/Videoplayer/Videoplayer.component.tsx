@@ -4,6 +4,7 @@ import video from "../../../src/videos/video_var.mp4";
 import VideoHeader from "../VideoHeader/VideoHeader.component";
 import SliderComponent from "../Slider/Slider_desktop/Slider.component";
 import SliderMobile from "../Slider/Slider_mobile/Slider_mobile.component";
+import { createPortal } from "react-dom";
 
 const VideoPlayer = () => {
   return (
@@ -34,7 +35,7 @@ const VideoPlayer = () => {
           loop
           muted
           playsInline
-          preload="auto"
+          preload={"auto"}
         >
           <source src={video} type="video/mp4" />
         </video>
