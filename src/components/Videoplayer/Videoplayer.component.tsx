@@ -6,12 +6,6 @@ import SliderComponent from "../Slider/Slider_desktop/Slider.component";
 import SliderMobile from "../Slider/Slider_mobile/Slider_mobile.component";
 
 const VideoPlayer = () => {
-  // const video: any = document.getElementById("VideoPlayer");
-  const [loaded, setLoaded] = useState(false);
-
-  useEffect(() => {
-    const video = document.getElementById("VideoPlayer");
-  }, []);
   return (
     <div id="logo" className={styles.wrapper}>
       <div className={styles.content}>
