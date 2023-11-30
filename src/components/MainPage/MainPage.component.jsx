@@ -25,19 +25,21 @@ const MainPage = () => {
 
   return (
     <div className={styles.wrapper}>
-      {loading ? (
-        <LoadingPage />
-      ) : (
-        <div className={styles.content}>
-          {/* <MyLazyComponent id="myVideo" async /> */}
-          <VideoPlayer id="VideoPlayer" async />
-          <AboutUs />
-          <Main />
-          <Project />
-          <ActualProject />
-          <Footer />
-        </div>
-      )}
+      <Suspense>
+        {loading ? (
+          <LoadingPage />
+        ) : (
+          <div className={styles.content}>
+            {/* <MyLazyComponent id="myVideo" async /> */}
+            <VideoPlayer id="VideoPlayer" async />
+            <AboutUs />
+            <Main />
+            <Project />
+            <ActualProject />
+            <Footer />
+          </div>
+        )}
+      </Suspense>
     </div>
   );
 };
