@@ -8,6 +8,7 @@ import { lazy, Suspense } from "react";
 import Main from "../Pages/Directions_Industries/Main.component";
 import LoadingPage from "../LoadingScreen/LoadingScreen.component";
 import VideoPlayer from "../Videoplayer/Videoplayer.component";
+import SmoothAnimation from "../SmoothAnim/SmothAnim.component";
 
 const MyLazyComponent = lazy(() =>
   import("../Videoplayer/Videoplayer.component")
@@ -20,7 +21,7 @@ const MainPage = () => {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 1500);
+    }, 2000);
   }, []);
 
   return (
@@ -34,6 +35,7 @@ const MainPage = () => {
             <VideoPlayer id="VideoPlayer" async />
             <AboutUs />
             <Main />
+            {/* <SmoothAnimation /> */}
             <Project />
             <ActualProject />
             <Footer />

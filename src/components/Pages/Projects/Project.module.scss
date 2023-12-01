@@ -68,6 +68,8 @@ body {
         .blocks {
           display: flex;
           flex-direction: row;
+          align-items: flex-start;
+          margin-top: 1em;
 
           @media screen and (max-width: 1200px) {
             display: none;
@@ -81,7 +83,7 @@ body {
             gap: 1em;
             flex-direction: column;
             //   margin-left: 2em;
-            margin-top: 1em;
+            margin-top: 0.4em;
             width: 525px;
 
             @media screen and (max-width: 2400px) {
@@ -143,7 +145,7 @@ body {
             gap: 1em;
             flex-direction: column;
             margin-left: 6.5em;
-            margin-top: 3.5em;
+            // margin-top: 3.5em;
             width: 525px;
 
             @media screen and (max-width: 2700px) {
@@ -214,7 +216,7 @@ body {
             gap: 1em;
             flex-direction: column;
             margin-left: 6.5em;
-            margin-top: 7em;
+            // margin-top: 7em;
             width: 525px;
 
             @media screen and (max-width: 2700px) {
@@ -283,7 +285,7 @@ body {
             gap: 1em;
             flex-direction: column;
             margin-left: 6.5em;
-            margin-top: 10.5em;
+            // margin-top: 10.5em;
             width: 500px;
 
             @media screen and (max-width: 2700px) {
@@ -292,7 +294,7 @@ body {
 
             @media screen and (max-width: 2400px) {
               font-size: 25px;
-              margin-top: 6em;
+              // margin-top: 6em;
               width: 400px;
               margin-left: 2em;
             }

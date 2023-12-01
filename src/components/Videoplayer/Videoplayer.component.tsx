@@ -4,7 +4,7 @@ import video from "../../../src/videos/video_var.mp4";
 import VideoHeader from "../VideoHeader/VideoHeader.component";
 import SliderComponent from "../Slider/Slider_desktop/Slider.component";
 import SliderMobile from "../Slider/Slider_mobile/Slider_mobile.component";
-import { createPortal } from "react-dom";
+import photo_1 from "../../../src/images/photo_1.png";
 
 const VideoPlayer = () => {
   return (
@@ -39,6 +39,8 @@ const VideoPlayer = () => {
         >
           <source src={video} type="video/mp4" />
         </video>
+
+        <img src={photo_1} alt="" />
       </div>
     </div>
   );

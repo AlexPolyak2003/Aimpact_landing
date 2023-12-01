@@ -57,7 +57,7 @@ const Main = () => {
         <div className={styles.left_box}>
           <div className={styles.titles}>
             <h1
-              style={{ color: color[1], borderBottomColor: underline[1] }}
+              style={{ color: color[1] }}
               id="btn_1"
               ref={button_1}
               onClick={handleClick}

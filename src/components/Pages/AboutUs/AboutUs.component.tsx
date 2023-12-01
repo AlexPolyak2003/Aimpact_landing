@@ -1,4 +1,8 @@
 import styles from "./AboutUs.module.scss";
+import icon_1 from "../../../icons/AboutUs/logo-tpp.png";
+import icon_2 from "../../../icons/AboutUs/logoRstAbali.svg";
+import icon_3 from "../../../icons/AboutUs/logoSVGblueWordnoColor.svg";
+import icon_4 from "../../../icons/AboutUs/лого.jpg";
 
 const AboutUs = () => {
   return (
@@ -40,9 +44,19 @@ const AboutUs = () => {
                 признанных в мире IT и бизнеса, и уверены в том, что ваше
                 будущее вместе с нами будет ярким и успешным.
               </p>
+
+              <p>Мы сотрудничаем с:</p>
             </div>
           </div>
         </div>
+        {/* <div className={styles.parthers}>
+          <div className={styles.images}>
+            <img src={icon_1} alt="" />
+            <img src={icon_2} alt="" />
+            <img src={icon_3} alt="" />
+            <img src={icon_4} alt="" />
+          </div>
+        </div> */}
       </div>
 
       {/* Мобильная версия */}
