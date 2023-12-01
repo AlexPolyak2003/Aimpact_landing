@@ -138,9 +138,13 @@ body {
 
         @media screen and (max-width: 776px) {
           position: absolute;
-          right: 0%;
+          right: 2%;
           top: 70%;
           display: block;
+        }
+
+        @media screen and (max-width: 500px) {
+          right: 5%;
         }
       }
     }
