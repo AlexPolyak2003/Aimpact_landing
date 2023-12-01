@@ -40,7 +40,7 @@ const VideoPlayer = () => {
           <source src={video} type="video/mp4" />
         </video>
 
-        <img src={photo_1} alt="" />
+        <img className={styles.photo_1} src={photo_1} alt="" />
       </div>
     </div>
   );

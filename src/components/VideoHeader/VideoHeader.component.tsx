@@ -91,7 +91,7 @@ const VideoHeader = (): ReactElement => {
         </nav>
 
         <div className={styles.phone_number}>
-          <h1>+7 xxx xxx xxxx</h1>
+          <h1>+7 932 777 77 20</h1>
         </div>
       </div>
     </div>

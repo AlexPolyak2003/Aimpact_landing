@@ -18,7 +18,7 @@ const Footer = () => {
                 </div>
                 <div className={styles.email}>
                   <img src={email_icon} alt="почта" />
-                  <p>info@ии-импакт.рф</p>
+                  <p>info@aimpact.ru</p>
                 </div>
               </div>
             </div>

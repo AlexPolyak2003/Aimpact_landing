@@ -98,7 +98,7 @@ body {
         }
 
         .slider_position {
-          margin-top: 45%;
+          margin-top: 40%;
 
           @media screen and (max-width: 776px) {
             position: absolute;
@@ -120,21 +120,19 @@ body {
         }
         @media screen and (max-width: 776px) {
           display: none;
-          background: url(../../../src/images/photo_1.png);
         }
       }
 
-      img {
+      .photo_1 {
         display: none;
 
         @media screen and (max-width: 776px) {
-          height: 40em;
+          height: 100vh;
           width: 100vw;
           display: flex;
-          // object-fit: contain;
+          object-fit: cover;
         }
       }
-
       .slider_mobile {
         display: none;
 
