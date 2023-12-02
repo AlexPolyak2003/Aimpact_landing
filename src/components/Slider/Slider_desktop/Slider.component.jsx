@@ -48,6 +48,10 @@ const data = [
     id: "9",
     text: "Российская экономика за счет внедрения ИИ получила в 2021 году дополнительные 300 млрд руб. 21 ноя - РБК",
   },
+  {
+    id: "10",
+    text: "«Повсеместное внедрение ИИ повысит уровень благосостояния граждан — Путин.» 24 ноя — РАПСИ."
+  }
 ];
 
 const SliderComponent = () => {
@@ -55,6 +59,7 @@ const SliderComponent = () => {
     dots: false,
     infinite: true,
     speed: 300,
+    autoplaySpeed: 4000,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
