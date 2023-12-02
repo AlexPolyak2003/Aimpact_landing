@@ -153,6 +153,7 @@ body {
 
     .content_mobile {
       display: none;
+      animation: appearance 0.5s;
 
       @media screen and (max-width: 776px) {
         height: 100%;
