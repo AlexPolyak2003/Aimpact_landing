@@ -4,7 +4,7 @@ import video from "../../../src/videos/video_var.mp4";
 import VideoHeader from "../VideoHeader/VideoHeader.component";
 import SliderComponent from "../Slider/Slider_desktop/Slider.component";
 import SliderMobile from "../Slider/Slider_mobile/Slider_mobile.component";
-import photo_1 from "../../../src/images/photo_1.png";
+import laser from "../../../src/images/laser.jpg";
 
 const VideoPlayer = () => {
   const [isLoad, setLoading] = useState(false);
@@ -43,7 +43,7 @@ const VideoPlayer = () => {
           <source src={video} type="video/mp4" />
         </video>
 
-        <img className={styles.photo_1} src={photo_1} alt="" />
+        <img className={styles.photo_1} src={laser} alt="" />
       </div>
     </div>
   );

@@ -24,7 +24,15 @@ const Footer = () => {
             </div>
 
             <div className={styles.bottom}>
-              <div className={styles.left_bottom}>
+              <div>
+                <p className={styles.about_orgranization}>
+                AIMPACT является проектом компании ООО «АЙПИ.Медиа-Сочи»
+                <br />
+                <br />
+                ООО «АЙПИ.Медиа-СОЧИ»
+                ИНН: 2320150344, КПП: 232001001 ОГРН: 1072320006439<br />
+                354057, г. Сочи, Туапсинская, 9А, оф. 42 Тел. 8(862) 235-35-63; 8(862) 296-06-06
+                </p>
                 <p>© 2023 Aimpact</p>
               </div>
               <div className={styles.right_bottom}>
