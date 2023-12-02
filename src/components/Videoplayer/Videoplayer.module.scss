@@ -98,12 +98,15 @@ body {
         }
 
         .slider_position {
-          margin-top: 40%;
+          // margin-top: 40%;
 
-          @media screen and (max-width: 776px) {
-            position: absolute;
-            top: 50em;
-          }
+          // @media screen and (max-width: 776px) {
+          //   position: absolute;
+          //   top: 50em;
+          // }
+          align-self: last baseline;
+          position: relative;
+          right: 20px;
         }
       }
 
