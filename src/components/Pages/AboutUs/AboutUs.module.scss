@@ -116,11 +116,6 @@ body {
             //   line-height: 20px;
             // }
             
-            p.accent {
-              font-style: normal;
-              color: #2d418d;
-            }
-
             p {
               font-size: 30px;
 
@@ -194,18 +189,38 @@ body {
         .images {
           display: flex;
           flex-wrap: wrap;
-          justify-content: space-around;
+          justify-content: space-evenly;
         }
 
-        // img {
-        //   width: 200px;
-        //   height: 200px;
-        // }
+        .accent {
+          font-size: 40px;
+          color: rgb(45, 65, 141);
+          text-align: center;
+        }
       }
     }
 
     .content_mobile {
       display: none;
+
+      .parthers {
+        display: flex;
+        flex-direction: column;
+        .images {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-evenly;
+          img {
+            max-width: 90%;
+          }
+        }
+
+        .accent {
+          font-size: 40px;
+          color: rgb(45, 65, 141);
+          text-align: center;
+        }
+      }
 
       @media screen and (max-width: 776px) {
         height: 100%;

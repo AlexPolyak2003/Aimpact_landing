@@ -12,15 +12,9 @@ const ActualProject = () => {
             <h1>актуальные проекты</h1>
           </div>
           <div className={styles.companies}>
-            <div>
-              <img src={gazprom} alt="газпром" />
-            </div>
-            <div>
-              <img src={vnukovo} alt="" />
-            </div>
-            <div>
-              <img src={zarubezneft} alt="" />
-            </div>
+            <img src={gazprom} alt="газпром" />
+            <img src={vnukovo} alt="" />
+            <img src={zarubezneft} alt="" />
           </div>
         </div>
       </div>

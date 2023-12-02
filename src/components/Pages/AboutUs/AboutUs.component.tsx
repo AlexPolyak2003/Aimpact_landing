@@ -44,11 +44,11 @@ const AboutUs = () => {
                 будущее вместе с нами будет ярким и успешным.
               </p>
 
-              <p className={styles.accent}>Мы сотрудничаем с:</p>
             </div>
           </div>
         </div>
         <div className={styles.parthers}>
+          <p className={styles.accent}>Мы сотрудничаем с:</p>
           <div className={styles.images}>
             <img src={icon_1} alt="" />
             <img src={icon_2} alt="" />
@@ -97,6 +97,14 @@ const AboutUs = () => {
                 будущее вместе с нами будет ярким и успешным.
               </p>
             </div>
+          </div>
+        </div>
+        <div className={styles.parthers}>
+          <p className={styles.accent}>Мы сотрудничаем с:</p>
+          <div className={styles.images}>
+            <img src={icon_1} alt="" />
+            <img src={icon_2} alt="" />
+            <img src={icon_3} alt="" />
           </div>
         </div>
       </div>
