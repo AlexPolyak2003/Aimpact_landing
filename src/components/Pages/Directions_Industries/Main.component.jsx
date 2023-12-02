@@ -3,6 +3,7 @@ import { useState, useRef } from "react";
 import Direction_page from "./Directions/Directions.component";
 import Industry from "./Industries/Industry.component";
 import mozg from "../../../icons/Directions/mozg.svg";
+import { CSSTransition } from "react-transition-group";
 import React from "react";
 
 const Main = () => {
@@ -28,7 +29,7 @@ const Main = () => {
   };
 
   const InitialContent = () => {
-    return <Direction_page />;
+    return <Direction_page className={styles.hidden} />;
   };
 
   const ChangedContent = () => {
@@ -82,7 +83,7 @@ const Main = () => {
           </div>
         </div>
 
-        {secondState ? <ChangedContent /> : <InitialContent />}
+        {secondState ? <ChangedContent id="myElement" /> : <InitialContent />}
       </div>
 
       {/* mobile */}

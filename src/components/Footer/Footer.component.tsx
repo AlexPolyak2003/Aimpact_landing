@@ -14,7 +14,7 @@ const Footer = () => {
               <div className={styles.left_top}>
                 <div className={styles.phone_number}>
                   <img src={phone_icon} alt="телефон" />
-                  <p>+7 932 777 77 20</p>
+                  <p>+7 984 000 05 06</p>
                 </div>
                 <div className={styles.email}>
                   <img src={email_icon} alt="почта" />
