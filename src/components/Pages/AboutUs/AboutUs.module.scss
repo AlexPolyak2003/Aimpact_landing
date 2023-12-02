@@ -5,7 +5,6 @@
 
 body {
   font-family: "EuclidSquare";
-  text-align: justify;
 
   .wrapper {
     width: 100%;
@@ -189,17 +188,40 @@ body {
         flex-direction: column;
         .images {
           display: flex;
+          flex-wrap: wrap;
+          justify-content: space-evenly;
         }
 
-        img {
-          width: 200px;
-          height: 200px;
+        .accent {
+          font-size: 40px;
+          color: rgb(45, 65, 141);
+          text-align: center;
         }
       }
     }
 
     .content_mobile {
       display: none;
+
+      .parthers {
+        display: flex;
+        flex-direction: column;
+
+        .images {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-evenly;
+          img {
+            max-width: 90%;
+          }
+        }
+
+        .accent {
+          font-size: 25px;
+          color: rgb(45, 65, 141);
+          text-align: center;
+        }
+      }
 
       @media screen and (max-width: 776px) {
         height: 100%;

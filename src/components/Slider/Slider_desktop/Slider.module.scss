@@ -14,6 +14,13 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+
+    @media screen and (max-width: 776px) {
+      // font-size: 14px;
+      // line-height: 15px;
+      display: none;
+    }
+
     .slider {
       display: flex;
       flex-direction: column;

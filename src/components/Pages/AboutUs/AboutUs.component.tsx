@@ -1,8 +1,7 @@
 import styles from "./AboutUs.module.scss";
 import icon_1 from "../../../icons/AboutUs/logo-tpp.png";
 import icon_2 from "../../../icons/AboutUs/logoRstAbali.svg";
-import icon_3 from "../../../icons/AboutUs/logoSVGblueWordnoColor.svg";
-import icon_4 from "../../../icons/AboutUs/лого.jpg";
+import icon_3 from "../../../icons/AboutUs/logoSVGblueWordnoColor.png";
 
 const AboutUs = () => {
   return (
@@ -45,12 +44,11 @@ const AboutUs = () => {
                 будущее вместе с нами будет ярким и успешным.
               </p>
 
-              <p>Мы сотрудничаем с:</p>
-              {/* TODO: добавить иконки */}
             </div>
           </div>
         </div>
         <div className={styles.parthers}>
+          <p className={styles.accent}>Мы сотрудничаем с:</p>
           <div className={styles.images}>
             <img src={icon_1} alt="" />
             <img src={icon_2} alt="" />
@@ -99,6 +97,14 @@ const AboutUs = () => {
                 будущее вместе с нами будет ярким и успешным.
               </p>
             </div>
+          </div>
+        </div>
+        <div className={styles.parthers}>
+          <p className={styles.accent}>Мы сотрудничаем с:</p>
+          <div className={styles.images}>
+            <img src={icon_1} alt="" />
+            <img src={icon_2} alt="" />
+            <img src={icon_3} alt="" />
           </div>
         </div>
       </div>

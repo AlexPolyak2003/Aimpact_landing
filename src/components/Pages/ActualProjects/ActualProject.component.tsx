@@ -11,36 +11,10 @@ const ActualProject = () => {
           <div className={styles.title}>
             <h1>актуальные проекты</h1>
           </div>
-
-          <div className={styles.gazprom_position}>
-            <div className={styles.gazprom}>
-              <img src={gazprom} alt="газпром" />
-              <h1>Газпром Нефть</h1>
-            </div>
-          </div>
-
           <div className={styles.companies}>
-            <div className={styles.vnukovo}>
-              <img src={vnukovo} alt="" />
-              <h1>Аэропорт Внуково</h1>
-            </div>
-            <div className={styles.zarubezhneft}>
-              <img src={zarubezneft} alt="" />
-              <h1>Зарубежнефть</h1>
-            </div>
-          </div>
-
-          {/* мобильная версия */}
-
-          <div className={styles.companies_mobile}>
-            <div className={styles.vnukovo}>
-              <img src={vnukovo} alt="" />
-              <h1>Аэропорт Внуково</h1>
-            </div>
-            <div className={styles.zarubezhneft}>
-              <img src={zarubezneft} alt="" />
-              <h1>Зарубежнефть</h1>
-            </div>
+            <img src={gazprom} alt="газпром" />
+            <img src={vnukovo} alt="" />
+            <img src={zarubezneft} alt="" />
           </div>
         </div>
       </div>
