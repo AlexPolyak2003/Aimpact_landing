@@ -1,10 +1,10 @@
 @font-face {
-  font-family: "EuclidSquare";
-  src: url("../../fonts/EuclidSquare-Regular.ttf");
+  font-family: 'EuclidSquare';
+  src: url('../../fonts/EuclidSquare-Regular.ttf');
 }
 
 body {
-  font-family: "EuclidSquare";
+  font-family: 'EuclidSquare';
 
   .wrapper {
     display: flex;
@@ -12,6 +12,7 @@ body {
     position: fixed;
     width: 100%;
     z-index: 5;
+    transition: all 0.4s;
 
     &.wrapper-bg {
       width: 100%;
@@ -28,6 +29,11 @@ body {
       animation-duration: 1s;
       height: 7em;
       gap: 72em;
+      transition: all 0.4s;
+
+      &.content-bg {
+        height: 5em;
+      }
 
       @media screen and (max-width: 3700px) {
         gap: 60em;

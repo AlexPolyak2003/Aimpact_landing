@@ -1,10 +1,10 @@
 @font-face {
-  font-family: "EuclidSquare";
-  src: url("../../../../fonts/EuclidSquare-Regular.ttf");
+  font-family: 'EuclidSquare';
+  src: url('../../../../fonts/EuclidSquare-Regular.ttf');
 }
 
 body {
-  font-family: "EuclidSquare";
+  font-family: 'EuclidSquare';
   .wrapper {
     width: 100%;
     height: 100%;
@@ -18,6 +18,7 @@ body {
       align-items: flex-start;
       flex-direction: row;
       gap: 18em;
+      animation: appearance 0.5s;
 
       @media screen and (max-width: 1300px) {
         gap: 14em;
@@ -181,5 +182,17 @@ body {
         }
       }
     }
+  }
+}
+
+@keyframes appearance {
+  0% {
+    opacity: 0;
+    transform: translateX(-10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
   }
 }
