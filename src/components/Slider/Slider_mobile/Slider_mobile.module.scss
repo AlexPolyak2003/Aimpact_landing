@@ -20,10 +20,15 @@
 
       .text {
         height: 100%;
+
+        .anotherText {
+          display: flex;
+          align-items: flex-start;
+        }
         p {
           font-family: "EuclidSquare";
           display: flex;
-          justify-content: center;
+          justify-content: flex-start;
           align-items: center;
           margin-left: 1.65em;
           height: 80px;
