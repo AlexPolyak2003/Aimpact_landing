@@ -76,7 +76,7 @@ const SliderComponent = () => {
     dots: false,
     infinite: true,
     speed: 300,
-    autoplaySpeed: 4000,
+    autoplaySpeed: 6500,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
