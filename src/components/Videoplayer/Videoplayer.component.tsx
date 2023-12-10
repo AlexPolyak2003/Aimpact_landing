@@ -31,7 +31,6 @@ const VideoPlayer = () => {
         </div>
 
         <video
-          // ref={vidRef}
           id="videoPlayer"
           autoPlay
           loop

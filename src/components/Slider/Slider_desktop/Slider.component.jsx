@@ -83,7 +83,6 @@ const SliderComponent = () => {
     vertical: true,
     centerPadding: "5em",
     arrows: false,
-    // responsiveMode: true,
   };
 
   return (

@@ -1,10 +1,10 @@
 @font-face {
-  font-family: 'EuclidSquare';
-  src: url('../../fonts/EuclidSquare-Regular.ttf');
+  font-family: "EuclidSquare";
+  src: url("../../fonts/EuclidSquare-Regular.ttf");
 }
 
 body {
-  font-family: 'EuclidSquare';
+  font-family: "EuclidSquare";
 
   .wrapper {
     display: flex;
@@ -316,7 +316,6 @@ body {
 
         h1 {
           font-weight: 500;
-          // margin-left: 3em;
           text-align: right;
           font-size: 25px;
           width: 240px;
